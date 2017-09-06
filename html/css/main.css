@@ -1,0 +1,77 @@
+/* Selector by type */
+p {
+	color: red;
+	margin-bottom: 10px;
+}
+
+/* Selctor by class */
+.blue-text {
+	color: blue;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+/* Selector by ID */
+#moretext {
+	color: green;
+}
+
+#nested {
+	border: 1px solid #000;
+}
+
+#nested p {
+	font-style: italic;
+}
+
+/* All <p> elements with the class "bolder" */
+p.bolder {
+	font-weight: bold;
+	color: green;
+}
+
+/* All <p> elements inside an element with the class "bolder" */
+.bolder p {
+	font-weight: bold;
+	color: yellow;
+}
+
+/* Multiple selectors with the same properties */
+p.bolder,
+.bolder p {
+	color: brown;
+}
+
+/* Important: The last rule always wins, if you use the same selector or property multiple times */
+
+/* Using multiple classes for buttons to be able to re-use the same properties for many items. */
+
+.btn {
+	border: 1px solid #555555;
+	background: #fff;
+	color: #000;
+	padding: 10px;
+}
+
+.btn-gray {
+	background: #efefef;
+	color: #555;
+}
+
+.btn-green {
+	background: #00aa00;
+	color: #000;
+}
+
+#external-styling {
+	margin-top: 10px;
+	border: 1px solid #aa0000;
+	border-radius: 6px;
+	padding: 10px;
+}
+
+#external-styling p {
+	color: #909090;
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS Basics</title>
+
+		<!-- Reset CSS (basic rules for buttons, etc.) of the browser -->
+		<link rel="stylesheet" href="css/reset.css">
+
+		<!-- External CSS file -->
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- Inline Style -->
+		<style type="text/css">
+			/*
+				PLEASE:
+				
+				Do not use inline styles, if there is no good reason, like inserting a widget from external resources in other web pages.
+			*/
+		</style>
+	</head>
+	<body>
+		<p>
+			Some text
+		</p>	
+		<p class="blue-text">
+			Blue text
+		</p>
+		<p class="blue-text bold-text">
+			Bold Blue text
+		</p>
+		<p id="moretext">
+			More text
+		</p>
+		<div id="nested">
+			<p>
+				This is a nested element.
+			</p>
+		</div>
+
+		<br>
+
+		<div id="external-styling">
+			<p>
+				This box and its content is styled by the /css/main.css file.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="bolder">
+			Div "div.bolder" should not be bold
+		</div>
+
+		<br>
+
+		<p class="bolder">
+			"p.bolder" should be bold
+		</p>
+
+		<br>
+
+		<div class="bolder">
+			<p>
+				".bolder p" should be bold.
+			</p>
+		</div>
+
+		<!-- Multiple classes are seperated by spaces -->
+
+		<button class="btn btn-gray">This is a gray button</button>
+		<button class="btn btn-green">This is a green button</button>
+	</body>
+</html>
+
+
+<!--
+CSS Selector
+
+p {
+	color: red;
+}
+
+#moretext {
+	color: blue;
+}
+
+.blue-text {
+	color: blue;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+-->
