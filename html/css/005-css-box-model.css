@@ -39,6 +39,7 @@ strong {
 .colorful-half-wide {
     width: 50%;
     height: 100px;
+    color: blue;
     border: 1px solid #000;
     padding: 10px;
 }
