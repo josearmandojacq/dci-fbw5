@@ -33,6 +33,25 @@ p {
 	font-style: italic;
 }
 
+/* Selector specificity
+----------------------------*/
+
+/*
+ The selector with the highest specificity wins.
+
+ The calculation, especially for combined selectors, is a bit more difficult
+ and you can read about here:
+
+ http://learn.shayhowe.com/html-css/getting-to-know-css/#specificity
+
+ General rule of thumb for the specificity of selectors:
+
+ 1. By type
+ 2. By class
+ 3. By ID
+
+ */
+
 /* Colors
 ----------------------------*/
 
@@ -57,6 +76,14 @@ p {
 
 	/* Border color */
 	border-color: red;
+}
+
+
+/* Font colors
+----------------------------*/
+
+p {
+    color: rgb(125, 125, 125);
 }
 
 /* Font sizes
