@@ -124,5 +124,24 @@ p {
 */
 
 p {
-	border: 1px solid rgb(0, 0, 0); /* Width, Style, Color */
+	border: 1px solid rgb(0, 0, 0); /* Width, Style, Color  => All borders */
+
+    /* Single borders */
+
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+/* Border Radius
+----------------------------*/
+
+p {
+    border-radius: 6px;
+
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
