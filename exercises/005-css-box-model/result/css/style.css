@@ -52,11 +52,6 @@ blockquote {
     *zoom: 1;
 }
 
-.page {
-    width: 700px;
-    margin: 0 auto;
-}
-
 /* Floats */
 
 .align-left {
@@ -86,6 +81,11 @@ blockquote {
 }
 
 /* Layout */
+
+.page {
+    width: 700px;
+    margin: 0 auto;
+}
 
 header {
     border-bottom: 1px solid #c0c0c0;
