@@ -1,0 +1,227 @@
+/*
+  If you set display: none the element will not be visible on the screen
+  and the browser will NOT reserve space for that element.
+*/
+
+.hidden {
+	display: none;
+}
+
+.inline-block {
+	display: inline-block;
+	border: 1px solid red;
+	padding: 3px;
+}
+
+/*
+  display: inline-block can be used to style elements horizontally,
+  that are block-elements by default and would use the full width
+  (of the parent container or the full page) per item otherwise.
+
+  There's a small space between inline-block elements we'll talk
+  about later.
+*/
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+	.nav-item {
+		display: inline-block;
+		border: 1px solid #000;
+	}
+
+		.nav-item a {
+			color: #000000;
+			display: block;
+			padding: 10px;
+			text-decoration: none;
+		}
+
+		.nav-item a:hover {
+			background: #e0e0e0;
+		}
+
+/*
+  Width and height
+*/
+.colorful-half-wide {
+	width: 50%;
+	height: 100px;
+	color: #0099cc;
+	border: 1px solid #000;
+	padding: 10px;
+}
+
+/*
+  The full width of an element (using the default box model) will be
+  calculated by:
+
+  margin-right + border-right + padding-right + width + padding-left + border-left + margin-left
+
+  So the .box-model-calculation element will have a widht of 492px.
+*/
+.box-model-calculation {
+	border: 6px solid #000;
+	height: 130px;
+	margin: 20px;
+	padding: 20px;
+	width: 620px;
+}
+
+/*
+  Margin
+
+  The margin defines the amount of space that surrounds an element. Margins fall outside
+  of any borrder and are completely transparent in color.
+*/
+
+.margin-example {
+	border: 1px solid #000;
+
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+
+	margin: 10px 10px 10px 10px; /* shorter syntax: top, right, bottom, left */
+	margin: 5px 10px;            /* shorter syntax: top / bottom, left / right */
+	margin: 10px;                /* shortest syntax if all directions have the same margin */
+}
+
+.margin-left,
+.margin-right {
+	border: 1px solid #000000;
+	display: inline-block;
+	padding: 5px;
+	width: 40%;
+}
+
+.computed .margin-left,
+.computed .margin-right {
+	border: none;
+}
+
+.margin-right {
+	margin-right: 10px;
+}
+
+.margin-left {
+	margin-left: 10px;
+}
+
+/*
+  Padding
+
+  The padding defines the amount of space that is used directly within an element.
+  A classic example is to have a padding for a DIV element, that has a border and
+  contains some text, for design purposes.
+*/
+
+.padding-example {
+	border: 1px solid #000;
+
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+
+	padding: 10px 10px 10px 10px; /* shorter syntax: top, right, bottom, left */
+	padding: 5px 10px;            /* shorter syntax: top / bottom, left / right */
+	padding: 10px;                /* shortest syntax if all directions have the same padding */
+}
+
+/*
+  Box Sizing
+
+  The box sizing defines how the width and height of an element is calculated.
+  The default value is "content-box".
+
+  It's the additive approach we've seen before.
+*/
+
+.content-box {
+	box-sizing: content-box;
+}
+
+/*
+  border-box
+
+  border-box alters the box model so that any border OR padding will be included in the
+  width and height of an element.
+*/
+
+.border-box {
+	box-sizing: border-box;
+	width: 620px;
+	height: 360px;
+	border: 6px solid #000;
+	padding: 20px;
+	margin: 20px;
+}
+
+/* Horizontal centered container */
+
+.page {
+	width: 700px;
+	margin: 0 auto;
+}
+
+/* Simple styling for layout purposes */
+
+.box {
+	border: 1px solid #000000;
+	padding: 10px;
+}
+
+/*
+    Positioning elements with float:
+
+    float: left / right;
+*/
+
+.container {
+	width: 100%;
+}
+
+.box-left {
+	border: 1px solid #000;
+	width: 60%;
+	float: left;
+}
+
+.box-right {
+	border: 1px solid #000;
+	width: 25%;
+	float: right;
+}
+
+/* Floating classes */
+
+.align-left {
+	float: left;
+	margin-right: 1em;
+}
+
+.align-right {
+	float: right;
+	margin-left: 1em;
+}
+
+/* Using a Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	clear: both;
+	*zoom: 1;
+}

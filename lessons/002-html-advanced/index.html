@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Advanced HTML</title>
+    </head>
+    <body>
+        <h1 id="basic-formatting">Basic text formatting</h1>
+
+        <h2>Basic styling</h2>
+
+        <p>
+            There is some <b>bold</b>, <i>italic</i> and <u>underlined</u> text here.
+        </p>
+        <p>
+            There is another tag for bold text. It's called <strong>strong</strong>.
+        </p>
+        <p>
+            We could also write some <sub>subscripted</sub> and <sup>superscripted</sup> text.
+        </p>
+
+        <p>
+            Sometimes we need some <small>small</small> text or we want to <mark>show some parts as marked</mark>.
+        </p>
+
+        <h2>Quotes</h2>
+
+        <q>This is a short quote</q>
+
+        <!-- more common -->
+        <blockquote>
+            This is a larger quote from another text that we'd like to use.
+        </blockquote>
+
+        <h2>Abbreviation</h2>
+
+        The abbreviation tag is in most cases used with a title attribute to show the explanation of an abbreviation.<br>
+        Example: <abbr title="World Health Organization">WHO</abbr>
+
+        <h1>Image maps</h1>
+
+        <img src="images/dci-logo.png"
+            width="206"
+            height="140"
+            alt="Digital Career Institute Logo"
+            title="Digital Career Institute"
+            usemap="#logomap">
+
+        <map name="logomap">
+            <area shape="rect" coords="0, 0, 48, 140" alt="DCI" title="DCI" href="https://www.digitalcareerinstitute.org/">
+            <area shape="circle" coords="100, 70, 20" alt="DCI" title="DCI" href="https://www.digitalcareerinstitute.org/">
+        </map>
+
+        <h1>Lists</h1>
+
+        <h2>Unordered list</h2>
+
+        <!-- The closing tags are optional for <li> elements, but are used normally -->
+
+        <ul style="list-style: circle;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <h2>Ordered list</h2>
+
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milĺk</li>
+        </ol>
+
+        <!--
+        Types:
+        1	numbers (default)
+        A   numbered with uppercase letters
+        a   numbered with lowercase letters
+        I   numbered with upercase roman numbers
+        i   numbered with lowercase roman
+        -->
+
+        <ol type="I">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milĺk</li>
+        </ol>
+
+        <h2>Description list</h2>
+
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+
+        <h2>Nested lists</h2>
+
+        <ul>
+            <li>Coffee</li>
+            <li>
+                Tea
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h1>Tables</h1>
+
+        <!-- This is just set to get the header columns text to the left instead of the default styling that is centered. -->
+
+        <style type="text/css">
+            th {
+                text-align: left;
+            }
+        </style>
+
+        <h2>Basic table</h2>
+
+        <table width="100%" border="1">
+            <caption>A basic table</caption>
+            <thead>
+                <tr>
+                    <th>Surname</th>
+                    <th>Lastname</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Peter</td>
+                    <td>Shaw</td>
+                    <td>0123 4556 789</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Lennon</td>
+                    <td>0123 4556 789</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <h2>Colspan</h2>
+
+        <table width="100%" border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Peter Shaw</td>
+                    <td>0123 456 789</td>
+                    <td>0123 456 890</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <h2>Rowspan</h2>
+
+        <table width="100%" border="1">
+            <tr>
+                <th>Name:</th>
+                <td>Bill Gates</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Telephone:</th>
+                <td>0123 456 789</td>
+            </tr>
+            <tr>
+                <td>0123 456 799</td>
+            </tr>
+        </table>
+
+        <h1>Internal links</h1>
+
+        <a href="#basic-formatting">Go to basic formatting</a>
+
+        <!-- Old solution as a jump target (anchor) -->
+        <a name="basic-formatting-anchor"></a>
+
+        <!-- New solution -->
+        <!-- <h1 id="basic-formatting">Jump headline</h1> -->
+
+        <h1>Email links</h1>
+
+        <p>
+            We need URL encoding for parameters, if they contain spaces or special characters.<br>
+            <br>
+            <a href="https://www.urlencoder.org/">https://www.urlencoder.org/</a>
+        </p>
+
+        <a href="mailto:dominik.hanke@devugees.org?subject=This%20is%20a%20test%20email%20with%20umlauts%20rasenm%C3%A4her">dominik.hanke@devugees.org</a>
+    </body>
+</html>

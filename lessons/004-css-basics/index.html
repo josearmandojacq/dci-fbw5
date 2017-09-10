@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>CSS Basics</title>
+
+        <!-- Normalize CSS (resetting basic rules for buttons, etc.) of the browsers -->
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <!-- External CSS file -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- The explanations can be found in css/lesson.css -->
+
+        <!-- Inline Style -->
+        <style type="text/css">
+            /*
+                PLEASE:
+
+                Do not use inline styles, if there is no good reason, like inserting a widget from external
+                resources in other web pages.
+
+                The styles for this page can be found in /css/004-css-basics.css
+            */
+        </style>
+    </head>
+    <body>
+        <h1>Basic color and font-weight</h1>
+
+        <p>
+            Some simple text, in a &lt;p&gt; element.
+        </p>
+
+        <p class="blue-text">
+            Blue sample text in a &lt;p&gt; element with the class "blue-text".
+        </p>
+
+        <p class="blue-text bold-text">
+            Bold and blue sample text in a &lt;p&gt; element with the classes "blue-text" and "bold-text".
+        </p>
+
+        <p id="green-text">
+            Green sample text in a &lt;p&gt; element with the ID "green-text" to show a selector by ID.
+        </p>
+
+        <h2>Nested selectors</h2>
+
+        <div id="nested">
+            <p>
+                This is an element styled by the nested selector "#nested p".
+            </p>
+        </div>
+
+        <br>
+
+        <h2>Selector order example</h2>
+
+        <p>
+            The following elements should have bold text:<br>
+            <ul>
+                <li>All &lt;p&gt; elements with the class "bolder"</li>
+                <li>All &lt;p&gt; elements inside another element with a class "bolder"</li>
+            </ul>
+        </p>
+
+        <div class="bolder">
+            This is a &lt;div&gt; element with the class "bolder" that should not have bold text, as the font-weight
+            is only defined for &lt;p&gt; elements.
+        </div>
+
+        <p class="bolder">
+            This is a paragraph with the class "bolder" that should have bold text.
+        </p>
+
+        <div class="bolder">
+            <p>
+                This is a paragraph inside an element with the class "bolder" that should have bold text.
+            </p>
+        </div>
+
+        <br>
+
+        <h2>Layering styles with multiple classes</h2>
+
+        <!-- Multiple classes are seperated by spaces -->
+
+        <button class="btn">This is a default button</button> &nbsp;
+        <button class="btn btn-gray">This is a gray button</button> &nbsp;
+        <button class="btn btn-green">This is a green button</button>
+    </body>
+</html>

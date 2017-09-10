@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>A HTML table span example</title>
+
+        <style type="text/css">
+            th,
+            td {
+                text-align: left;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Colspan</h1>
+
+        <table width="100%" border="1">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Phone</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Peter Shaw</td>
+                <td>0123 456 300</td>
+                <td>0123 456 400</td>
+            </tr>
+            <tr>
+                <td>Bob Andrews</td>
+                <td>0123 456 500</td>
+                <td>0123 456 600</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2>Rowspan</h2>
+
+        <table width="100%" border="1">
+            <tr>
+                <th>Name:</th>
+                <td>Max Goldwell</td>
+            </tr>
+            <tr>
+                <th rowspan="3" valign="top">Phone:</th>
+                <td>0123 456 400</td>
+            </tr>
+            <tr>
+                <td>0123 456 600</td>
+            </tr>
+            <tr>
+                <td>0123 456 800</td>
+            </tr>
+        </table>
+    </body>
+</html>

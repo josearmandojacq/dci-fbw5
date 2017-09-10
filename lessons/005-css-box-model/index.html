@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Box Model</title>
+
+    <!-- Normalize CSS (resetting basic rules for buttons, etc.) of the browsers -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+    <!--
+    How elements are displayed:
+
+    none
+    block
+    inline-block
+    -->
+
+    <h1>The "display" property</h1>
+
+    <h2>Block element</h2>
+
+    <div>
+        &lt;div&gt; elements are by default a block elements.
+    </div>
+
+    <h2>Inline element</h2>
+
+    <p>
+        The &lt;strong&gt; or &lt;span&gt; elements are examples of <strong>inline</strong> elements.
+    </p>
+
+    <h2>Inline block element</h2>
+
+    <p>
+        There is an <span class="inline-block">inline-block</span> element inside this text.<br>
+        The display value "inline-block" allows to use borders, padding, etc. for inline elements.
+    </p>
+
+    <h2 class="hidden">Hidden element</h2>
+
+    <div class="hidden">
+        This block is not visible, because of the display property: none.
+    </div>
+
+    <h2>Creating a horizontal navigation</h2>
+
+    <p>
+        We use the "display" property with a value of "inline-block" for the &lt;li&gt; elements of an unordered
+        list to get a horizontal orientated navigation.<br>
+        <br>
+        We also reset the "margin" and "padding" properties of the &lt;ul&gt; element.
+    </p>
+
+    <nav class="nav">
+        <ul>
+            <li class="nav-item">
+                <a href="#first">First item</a>
+            </li>
+            <li class="nav-item">
+                <a href="#second">Second item</a>
+            </li>
+            <li class="nav-item">
+                <a href="#third">Third item</a>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+
+    <h2>Setting width and height</h2>
+
+    <div class="colorful-half-wide">
+        The text has a nice color and the box uses 50% of the screen and has a height of 100px.<br>
+        <br>
+        We use the "width" and "height" properties for this.
+    </div>
+
+    <br>
+
+    <h2>Margin</h2>
+
+    <p>
+        The margin property allows us to set the amount of space that surrounds an element.
+        Margins for an element fall outside of any border and are completely transparent in color.
+    </p>
+
+    <div class="margin-right">
+        This box has a right margin of 10px.
+    </div>
+
+    <div class="margin-left">
+        This box has a left margin of 10px.
+    </div>
+
+    <p>
+        Watch the Element Inspector to see the computed model.
+    </p>
+
+    <div class="clearfix computed">
+        <div class="margin-right">
+            <img src="images/margin-right-box.png">
+        </div>
+        <div class="margin-left">
+            <img src="images/margin-right-box.png">
+        </div>
+    </div>
+
+    <h2>Padding</h2>
+
+    <p>
+        The padding property is used to provide spacing directly within an element.
+        It falls inside of an element’s border, should an element have a border.
+    </p>
+
+    <div class="padding-example">
+        This box has a padding of 10px.
+    </div>
+
+    <br>
+
+    <h2>box-sizing: content-box</h2>
+
+    <p>
+        The following &lt;div&gt; element uses the browser default value "content-box" for the "box-sizing" property
+        and the full width of the box is calculated by <strong>adding</strong> all margins, paddings and borders to the "width" property.
+    </p>
+
+    <strong>The used styles:</strong><br>
+
+    <table>
+        <tr>
+            <td>border:</td>
+            <td>6px solid #000000</td>
+        </tr>
+        <tr>
+            <td>height:</td>
+            <td>130px</td>
+        </tr>
+        <tr>
+            <td>margin:</td>
+            <td>20px</td>
+        </tr>
+        <tr>
+            <td>padding:</td>
+            <td>20px</td>
+        </tr>
+        <tr>
+            <td>width:</td>
+            <td>620px</td>
+        </tr>
+    </table>
+
+    <div class="box-model-calculation">
+        <strong>Full width calculation:</strong><br>
+        <br>
+        margin-left + border-left + padding-left + width + padding-right + border-right + margin-right<br>
+        <br>
+        <strong>Result:</strong><br>
+        <br>
+        20px + 6px + 20px + 620px + 20px + 6px + 20px = <strong>712px</strong>
+    </div>
+
+    <br>
+
+    <h2>box-sizing: border-box</h2>
+
+    <p>
+        The following &lt;div&gt; element uses the newer value "border-box" for the "box-sizing" property
+        and the full width of the box is <strong>fixed</strong> set by the "width" property.<br>
+        <br>
+        Other than with "content-box" the inner width of the box is reduced by all paddings and borders.
+    </p>
+
+    <strong>The used styles:</strong><br>
+
+    <table>
+        <tr>
+            <td>border:</td>
+            <td>6px solid #000000</td>
+        </tr>
+        <tr>
+            <td><span style="color: red;">height:</span></td>
+            <td><span style="color: red;">360px</span></td>
+        </tr>
+        <tr>
+            <td>margin:</td>
+            <td>20px</td>
+        </tr>
+        <tr>
+            <td>padding:</td>
+            <td>20px</td>
+        </tr>
+        <tr>
+            <td>width:</td>
+            <td>620px</td>
+        </tr>
+    </table>
+
+    <div class="border-box">
+        <strong>Full width calculation:</strong><br>
+        <br>
+        margin-left + width + margin-right<br>
+        <br>
+        <strong>Result:</strong><br>
+        <br>
+        20px + 620px + 20px = <strong>660px</strong><br>
+        <br>
+        <hr>
+        <br>
+        <strong>Inner width calculation:</strong><br>
+        <br>
+        width - padding-left - border-left - padding-right - border-right<br>
+        <br>
+        <strong>Result:</strong><br>
+        <br>
+        620px -20px -6px -20px -6px = <strong>568px</strong>
+    </div>
+
+    <br>
+
+    <h2>Floating elements</h2>
+
+    <h3>Float: left</h3>
+
+    <div class="box">
+        <img src="images/students-on-class.png"
+             class="align-left"
+             width="128"
+             height="128"
+             alt="Image floating on the left">
+        <p>
+            This is a text with an image floating to the left, so that the text is floating around on the right
+            side of the image element.
+        </p>
+        <p>
+            This can be useful for blog articles, magazines, newspapers and lots of other use cases, where you'd like
+            show an image and have more text that should be floating around it on one side.
+        </p>
+        <p>
+            The text will continue below the image, as soon as it needs more space.
+        </p>
+    </div>
+
+    <h3>Float: right</h3>
+
+    <div class="box">
+        <img src="images/students-on-class.png"
+             class="align-right"
+             width="128"
+             height="128"
+             alt="Image floating on the right">
+        <p>
+            This is a text with an image floating to the right, so that the text is floating around on the right
+            side of the image element.
+        </p>
+        <p>
+            This can be useful for blog articles, magazines, newspapers and lots of other use cases, where you'd like
+            show an image and have more text that should be floating around it on one side.
+        </p>
+        <p>
+            The text will continue below the image, as soon as it needs more space.
+        </p>
+    </div>
+
+    <h3>Using a clearfix</h3>
+
+    <p>
+        One of those pitfalls is that occasionally the proper styles will not render on an element that it is sitting
+        next to or is a parent element of a floated element. When an element is floated, it is taken out of the
+        normal flow of the page, and, as a result, the styles of elements around that floated element can be
+        negatively impacted.
+    </p>
+    <p>
+        It is possible to clear the floating manually, by using "clear: both;" on a following element, etc. but there
+        is a new and more comfortable solution today.
+    </p>
+    <p>
+        It is common to use a special class on the element that contains multiple other floating elements. If there is
+        none, you would probably use a &lt;div&gt; element as a solution.<br>
+        <br>
+        The surrounding element then get's the class "clearfix" added to it, that will care about clearing all floats
+        inside the box, so that the elements inside will not affect the parent element's styling.
+    </p>
+    <p>
+        The details how the clearfix works, are discusses later.
+    </p>
+
+    <div class="clearfix">
+        <div class="box-left">
+            Some text on the left
+        </div>
+
+        <div class="box-right">
+            Some text on the right
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <br><br><br>
+</div><!-- /page -->
+</body>
+</html>

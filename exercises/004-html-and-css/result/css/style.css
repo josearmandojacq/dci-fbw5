@@ -1,0 +1,27 @@
+body {
+	margin: 10px;
+}
+
+header,
+section {
+    margin-bottom: 20px;
+}
+
+#welcome {
+    border: 1px solid #000000;
+    color: #555555;
+    padding: 10px;
+}
+
+.text-green {
+    color: #00aa00;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.table-default td,
+.table-default th {
+    text-align: left;
+}
