@@ -4,10 +4,12 @@ This is an exercise for the CSS Box Model lesson. You'll need to remember how to
 
 # Tasks
 
-1. Create the following index page.
+1. Create the following index and about page.
+
+## index.html
 
 ![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/005-css-box-model/images/index.png)
 
-2. Create the following about page.
+## about.html
 
 ![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/005-css-box-model/images/about.png)
