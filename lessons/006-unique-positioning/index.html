@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>CSS Box Model</title>
+
+        <!-- Normalize CSS (resetting basic rules for buttons, etc.) of the browsers -->
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <!-- External CSS file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>CSS property "position"</h1>
+
+        <div class="static">
+            The default value of the position property is "static".
+        </div>
+
+        <br>
+
+        <h2>Relative positioning</h2>
+
+        <div class="items">
+            <div class="item" style="background: rgba(255,0,0,0.6);">
+                Item One
+            </div>
+            <div class="item item-two" style="background: rgba(0,255,0,0.6);">
+                Item Two
+            </div>
+            <div class="item" style="background: rgba(0,0,255,0.6);">
+                Item Three
+            </div>
+        </div>
+
+        <br>
+
+        <h2>Absolute positioning</h2>
+
+        <div class="container">
+            <div class="absolute-element"></div>
+        </div>
+
+        <br>
+
+        <h2>Manipulatin the z-index</h2>
+
+        <p>
+            The z-index defines the "level" of elements, that are layered on top of each other. This property can only be used for elements that have the "position" value "relative" or "absolute".<br><br>
+            The value should be an integer. With a positive value it will add levels and with a negative value you can tell the element to go backwords the given amount of levels.
+        </p>
+
+        <div class="items">
+            <div class="item" style="background: rgba(255,0,0,0.6);">
+                Item One
+            </div>
+            <div class="item item-two" style="background: rgba(0,255,0,0.6);">
+                Item Two
+            </div>
+            <div class="item" style="background: rgba(0,0,255,0.6); z-index: 10">
+                Item Three
+            </div>
+        </div>
+    </body>
+</html>
