@@ -1,0 +1,99 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+header {
+    background-color: #343a40;
+    padding: 9px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+img {
+    background: #ffffff;
+    border: 1px solid #a0a0a0;
+    padding: 2px;
+}
+
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+
+/* Layout */
+
+.page-name {
+    color: #ffffff;
+    float: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 20px 0 0;
+    padding: 8px;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Contents */
+
+.image-container {
+    display: inline-block;
+    position: relative;
+}
+    .image-top-right {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+.gallery {
+    margin: 0 0 70px 0;
+    padding: 0;
+}
+    .gallery-image {
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 15px;
+    }
+
+    .gallery-image-up {
+        position: relative;
+        top: -30px;
+    }
+
+    .gallery-image-down {
+        position: relative;
+        top: 30px;
+    }

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unique Positioning</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="clearfix">
+            <h1 class="page-name">Unique Positioning</h1>
+        </header>
+
+        <div class="container clearfix">
+            <div class="col-50">
+                <section>
+                    <h2>Absolute positioning</h2>
+
+                    <div class="image-container">
+                        <img src="images/sunset.jpg" width="600" height="397">
+                        <img class="image-top-right" src="images/sunset-2.jpg" width="200" height="133">
+                    </div>
+                </section>
+            </div><!-- /col-50 -->
+
+            <div class="col-50">
+                <section>
+                    <h2>Relative positioning</h2>
+
+                    <ul class="gallery">
+                        <li class="gallery-image"><img src="images/sunset.jpg" width="150"></li>
+                        <li class="gallery-image gallery-image-down"><img src="images/sunset.jpg" width="150"></li>
+                        <li class="gallery-image"><img src="images/sunset.jpg" width="150"></li>
+                    </ul>
+
+                    <ul class="gallery">
+                        <li class="gallery-image"><img src="images/sunset.jpg" width="150"></li>
+                        <li class="gallery-image gallery-image-up"><img src="images/sunset.jpg" width="150"></li>
+                        <li class="gallery-image"><img src="images/sunset.jpg" width="150"></li>
+                    </ul>
+                </section>
+            </div><!-- /col-50 -->
+        </div><!-- /container -->
+    </body>
+</html>
