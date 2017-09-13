@@ -94,7 +94,8 @@ section {
 .background-image-repeat-x,
 .background-image-repeat-y,
 .background-position-top-right,
-.background-position-bottom-left {
+.background-position-bottom-left,
+.background-position-px {
     border: 1px solid #c0c0c0;
     background-image: url('../images/sunset.jpg');
     padding: 20px;
@@ -129,6 +130,13 @@ section {
 .background-position-bottom-left {
     background: #efefef url('../images/sunset.jpg') bottom left no-repeat;
     height: 240px;
+}
+
+.background-position-px {
+    background-repeat: no-repeat;
+    background-position: 40px 20px;
+    height: 200px;
+    text-align: right;
 }
 
 .background-size-50 {
