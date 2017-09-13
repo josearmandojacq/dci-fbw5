@@ -32,6 +32,102 @@
                         Get the pattern here
                     </a>
                 </div>
+
+                <h3>Background Repeat</h3>
+
+                <h4>no-repeat</h4>
+
+                <div class="background-image-norepeat">
+                    This element uses the same pattern, but without repeating it.<br>
+                </div>
+
+                <h4>repeat-x / repeat-y</h4>
+
+                <div class="background-image-repeat-x">
+                    This element uses an image, repeated horizontally.<br>
+                </div>
+
+                <br>
+
+                <div class="background-image-repeat-y">
+                    This element uses an image, repeated vertically.<br>
+                </div>
+
+                <h3>Background Position</h3>
+
+                <p>
+                    By default, background images are positioned at the left top corner of an element.
+                </p>
+
+                <div class="background-position-top-right">
+                    This element uses an image, without repeat and in the top right corner.<br>
+                </div>
+
+                <div class="background-position-bottom-left">
+                    This element uses a background color and an image, without repeat and in the bottom left corner, with a shorthand syntax.<br>
+                    background: #efefef url('../images/sunset.jpg') bottom left no-repeat;
+                </div>
+
+                <h3>Background Size</h3>
+
+                <p>
+                    With Internet Explorer versions > 10 and all other major browsers in ther last 3 versions you'll be
+                    able to use a new CSS3 property "background-size".<br>
+                    The property accepts a few different values, including length and keyword values.
+                </p>
+                <p>
+                    When using length values, we can specify a width and a height value by using two space-separated values.<br>
+                    The first value will set the width of the background image, while the second value will set the height of the background image.<br>
+                    It’s important to note that percentage values are in relation to the element’s size, not the background image’s original size.
+                </p>
+                <p>
+                    You can use the keyword "auto" for one of the two values, to keep the aspect ratio, when setting only
+                    the width or the height.
+                </p>
+
+                <div class="background-size-50">
+                    This element uses 50% of it's size for the background image, while<br>
+                    keeping the aspect ratio of the original image.<br>
+                    <br>
+                    background-size: 50% auto;
+                </div>
+
+                <p>
+                    In addition to length background-size property values, there are also cover and contain keyword values available to the background-size property.
+                </p>
+                <p>
+                    The <strong>cover</strong> keyword value specifies that the background image will be resized to completely cover an element’s width and height.<br>
+                    The background image’s original aspect ratio will be preserved, yet the image will stretch or shrink as necessary to cover the entire element.
+                </p>
+                <p>
+                    The <strong>contain</strong> keyword value, on the other hand, specifies that the background image will be resized to reside entirely contained within an element’s width and height.<br>
+                    In doing so the background image’s original aspect ratio will be preserved, but the image will stretch or shrink as necessary to remain within the width and height of the element.
+                </p>
+
+                <div class="background-size-cover">
+                    This element uses the keyword "cover" for the "background-size" property.
+                </div>
+
+                <br>
+
+                <div class="background-size-contain">
+                    This element uses the keyword<br>
+                    "contain" for the "background-size"<br>
+                    property.
+                </div>
+
+                <br><br>
+
+                <h2>Adding a background gradient</h2>
+
+                <p>
+                    You can read all the details about background gradients <a href="http://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/">here</a>, if you like.<br>
+                    The easier solution you'll use in your everyday life is a tool like the <a href="http://www.colorzilla.com/gradient-editor/">Ultimate CSS Gradient Generator</a>.
+                </p>
+
+                <div class="background-gradient">
+                    This element uses a nice background gradient.
+                </div>
             </section>
         </div><!-- /container -->
     </body>

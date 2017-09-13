@@ -83,9 +83,87 @@ section {
     padding: 20px;
 }
 
-.background-image {
+.background-image,
+.background-image-norepeat {
     border: 1px solid #c0c0c0;
-    background: url('../images/patterns/hip-square.png') repeat;
+    background-image: url('../images/patterns/hip-square.png');
     padding: 20px;
     line-height: 2;
+}
+
+.background-image-repeat-x,
+.background-image-repeat-y,
+.background-position-top-right,
+.background-position-bottom-left {
+    border: 1px solid #c0c0c0;
+    background-image: url('../images/sunset.jpg');
+    padding: 20px;
+    line-height: 2;
+}
+
+.background-image-norepeat {
+    background-repeat: no-repeat;
+}
+
+.background-image-repeat-x,
+.background-image-repeat-y,
+.background-position-top-right {
+    height: 200px;
+}
+
+.background-image-repeat-x {
+    background-repeat: repeat-x;
+    padding-top: 150px;
+}
+
+.background-image-repeat-y {
+    background-repeat: repeat-y;
+    text-align: right;
+}
+
+.background-position-top-right {
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.background-position-bottom-left {
+    background: #efefef url('../images/sunset.jpg') bottom left no-repeat;
+    height: 240px;
+}
+
+.background-size-50 {
+    background: url('../images/sunset.jpg') left top no-repeat;
+    background-size: 50% auto;
+    border: 1px solid #c0c0c0;
+    color: #ffffff;
+    height: 200px;
+    padding: 20px;
+}
+
+.background-size-cover,
+.background-size-contain {
+    color: #ffffff;
+    border: 1px solid #c0c0c0;
+    width: 400px;
+    height: 200px;
+    background: url('../images/sunset.jpg') left top no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.background-size-contain {
+    background-size: contain;
+}
+
+.background-gradient {
+    background: #93cede; /* Old browsers */
+    background: -moz-linear-gradient(top, #93cede 0%, #75bdd1 41%, #49a5bf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #93cede 0%,#75bdd1 41%,#49a5bf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #93cede 0%,#75bdd1 41%,#49a5bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf',GradientType=0 ); /* IE6-9 */
+
+    border: 1px solid #c0c0c0;
+    color: #ffffff;
+    line-height: 2;
+    padding: 20px;
 }
