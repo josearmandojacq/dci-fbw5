@@ -140,6 +140,10 @@
                         the exception of <strong>checkbox</strong> as their <strong>type</strong> attribute value. The difference between the two is that<br>
                         check boxes allow users to select multiple values and tie them all to one control name
                     </p>
+                    <p>
+                        The name has to have brackets at the end, because the browser would not send<br>
+                        all selected values otherwise.
+                    </p>
 
                     <p>
                         <strong>Your favorite continent:</strong>
@@ -351,6 +355,16 @@
 
                 <section>
                     <h2>Input attributes</h2>
+
+                    <h3>Value</h3>
+
+                    <p>
+                        You can use the <strong>value</strong> attribute to pre-fill input fields. This can be useful when<br>
+                        an error occurs and you want to show the user the same data again, that he typed in.
+                    </p>
+                    <p>
+                        <input type="text" name="nothing_else" value="Max Mustermann">
+                    </p>
 
                     <h3>Disabled</h3>
 
