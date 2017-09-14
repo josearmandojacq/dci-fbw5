@@ -200,9 +200,90 @@
                                id="favorite_continent_an" checked>
                         <label for="favorite_continent_an">Antarctica</label>
                     </div>
+
+                    <h3>Drop-Down Lists</h3>
+
+                    <p>
+                        Drop-down lists are a perfect way to provide users with a long list of options in a practi- cal
+                        manner.<br>
+                        To create a drop-down list we’ll use the <strong>&lt;select&gt;</strong> and
+                        <strong>&lt;option&gt;</strong> elements.
+                    </p>
+                    <p>
+                        The <strong>&lt;select&gt;</strong> element wraps all of the menu options, and each menu option
+                        is marked up using the <strong>&lt;option&gt;</strong> element.
+                    </p>
+                    <p>
+                        Each <strong>&lt;option&gt;</strong> element has a <strong>value</strong> attribute and the element
+                        that gets selected by the user will be send as value for the<br>
+                        parameter you defined by setting the <strong>name</strong> attribute of the
+                        <strong>&lt;select&gt;</strong> element.
+                    </p>
+                    <p>
+                        If you want an <strong>&lt;option</strong> element to be selected when the page loads, you can add<br>
+                        the <strong>selected</strong> attribute without any value.
+                    </p>
+                    <p>
+                        <label for="weekday">The current weekday:</label>
+
+                        <select name="weekday" id="weekday">
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Form buttons</h2>
+
+                    <p>
+                        After a user inputs the requested information, buttons allow the user to put that information<br>
+                        into action. Most commonly, a submit input or submit button is used to process the data.
+                    </p>
+
+                    <h3>Submit Input</h3>
+
+                    <p>
+                        Users click the submit button to process data after filling out a form. The submit button can be<br>
+                        created using the <strong>&lt;input&gt;</strong> element with a type attribute value of submit.
+                        The value attribute is<br>
+                        used to specify the text that appears within the button.
+                    </p>
+
+                    <p>
+                        <input type="submit" class="btn btn-submit" value="Send my form">
+                    </p>
+
+                    <h3>Submit Button</h3>
+
+                    <p>
+                        By default, the <strong>&lt;button&gt;</strong> element acts as if it has a <strong>type</strong> attribute value
+                        of <strong>submit</strong>, so the <strong>type</strong><br>
+                        attribute and <strong>value</strong> may be omitted from the <strong<&lt;button&gt;</p> element if you wish.
+                    </p>
+                    <p>
+                        You'll se the difference between both solutions in the source code, using the Element Inspector<br>
+                        of your browser.
+                    </p>
+
+                    <p>
+                        <button class="btn btn-submit">Submit my form</button>
+                    </p>
                 </section>
 
             </div><!-- /container -->
         </form>
+
+        <script>
+            var date = new Date();
+            var currentWeekday = date.getDay() - 1;
+            var currentOption = document.querySelectorAll('#weekday option')[ currentWeekday ]
+            currentOption.setAttribute('selected', '');
+        </script>
     </body>
 </html>

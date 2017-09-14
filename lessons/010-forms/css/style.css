@@ -71,6 +71,10 @@ a {
     padding: 20px;
 }
 
+section {
+    margin-bottom: 40px;
+}
+
 /* Contents */
 
 
@@ -95,6 +99,10 @@ input[type="checkbox"],
 input[type="radio"] {
     width: auto;
     margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: auto;
 }
 
 select {
@@ -133,7 +141,7 @@ select {
 }
 
 .btn-submit {
-    background-color: #00aa00;
-    border-color: #00aa00;
+    background-color: #007bff;
+    border-color: #007bff;
     color: #ffffff;
 }
