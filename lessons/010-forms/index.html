@@ -69,18 +69,139 @@
                         But ... not all browser support all types for now and the results might look very different.
                     </p>
                     <p>
-                        <label for="date">Choose a date:</label>
-                        <input type="date" name="date" id="date">
+                        <label for="birth_date">Your birth date:</label>
+                        <input type="date" name="birth_date" id="birth_date">
                     </p>
                     <p>
-                        <label for="number">Choose a number:</label>
-                        <input type="number" name="number" id="number">
+                        <label for="age">Your age:</label>
+                        <input type="number" name="age" id="age">
                     </p>
                 </section>
 
                 <section>
                     <h2>Textareas</h2>
+
+                    <p>
+                        Textareas are used if longer text input is needed. The difference between input elements with the
+                        type "text" and textareas<br>
+                        is that there can be line breaks in a textarea, which is especially useful for blog articles and
+                        other large texts.
+                    </p>
+
+                    <p>
+                        <label for="about_me">Something about you:</label>
+                        <textarea name="about_me" id="about_me"></textarea>
+                    </p>
                 </section>
+
+                <section>
+                    <h2>Multiple Choice Inputs &amp; Menus</h2>
+
+                    <h3>Radio Buttons</h3>
+
+                    <p>
+                        Radio buttons are an easy way to allow users to make a quick choice from a small list of options.<br>
+                        Radio buttons permit users to select one option only.
+                    </p>
+                    <p>
+                        The radio input field needs a new attribute <strong>value</strong> as the user is not giving text
+                        into an input field<br>
+                        but selects a pre-defined value.
+                    </p>
+                    <p>
+                        If a value should be checked by default (when the page is loaded) we can add the attribute
+                        <strong>checked</strong> without a value.
+                    </p>
+
+                    <p>
+
+                        <strong>Your favorite language:</strong>
+                    </p>
+
+                    <div class="radio">
+                        <input type="radio"
+                               name="favorite_language"
+                               value="English"
+                               id="favorite_language_en" checked>
+                        <label for="favorite_language_en">English</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio"
+                               name="favorite_language"
+                               value="German"
+                               id="favorite_language_de" checked>
+                        <label for="favorite_language_de">German</label>
+                    </div>
+
+                    <h3>Checkboxes</h3>
+
+                    <p>
+                        Check boxes are very similar to radio buttons. They use the same attributes and patterns, with<br>
+                        the exception of <strong>checkbox</strong> as their <strong>type</strong> attribute value. The difference between the two is that<br>
+                        check boxes allow users to select multiple values and tie them all to one control name
+                    </p>
+
+                    <p>
+                        <strong>Your favorite continent:</strong>
+                    </p>
+
+                    <div class="checkbox">
+                        <input type="checkbox"
+                               name="favorite_continent"
+                               value="Africa"
+                               id="favorite_continent_af" checked>
+                        <label for="favorite_continent_af">Africa</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox"
+                               name="favorite_continent"
+                               value="Asia"
+                               id="favorite_continent_as" checked>
+                        <label for="favorite_continent_as">Asia</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox"
+                               name="favorite_continent"
+                               value="North America"
+                               id="favorite_continent_amn" checked>
+                        <label for="favorite_continent_amn">North America</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox"
+                               name="favorite_continent"
+                               value="South America"
+                               id="favorite_continent_ams" checked>
+                        <label for="favorite_continent_ams">South America</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox"
+                               name="favorite_continent"
+                               value="Australia / Oceania"
+                               id="favorite_continent_aus" checked>
+                        <label for="favorite_continent_aus">Australia / Oceania</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox"
+                               name="favorite_continent"
+                               value="Eurooe"
+                               id="favorite_continent_eu" checked>
+                        <label for="favorite_continent_eu">Europe</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox"
+                               name="favorite_continent"
+                               value="Antarctica"
+                               id="favorite_continent_an" checked>
+                        <label for="favorite_continent_an">Antarctica</label>
+                    </div>
+                </section>
+
             </div><!-- /container -->
         </form>
     </body>
