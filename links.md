@@ -26,3 +26,9 @@ There's a free HTML validator, to check if your HTML code follows the standards.
 There might be some errors that are not critical, as some of the new JavaScript solutions for effects, etc. don't work with standards. This can be ignored, if you know what it is.
 
 [W3 HTML validator](https://validator.w3.org/#validate_by_input)
+
+# Typing Games
+
+Typing games can be used to train your typing skills, as a good typing speed is important to do a good job as a developer.
+
+[Funny typing games](http://games.sense-lang.org/EN.php)
