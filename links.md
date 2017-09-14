@@ -32,3 +32,5 @@ There might be some errors that are not critical, as some of the new JavaScript 
 Typing games can be used to train your typing skills, as a good typing speed is important to do a good job as a developer.
 
 [Funny typing games](http://games.sense-lang.org/EN.php)
+
+[Typing Test](http://thetypingcat.com/typing-speed-test/1m)
