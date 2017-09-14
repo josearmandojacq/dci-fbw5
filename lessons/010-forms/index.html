@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="clearfix">
+            <h1 class="page-name">Forms</h1>
+        </header>
+
+        <form action="index.html" method="get">
+            <div class="container clearfix">
+                <section>
+                    <h2>Initializing a form</h2>
+
+                    <p>
+                        The <strong>&lt;form&gt;</strong> element wraps all of the elements that build the form (input fields, buttons, etc.).<br>
+                        The most important attributes are <strong>action</strong> and <strong>method</strong>.
+                    </p>
+                    <p>
+                        The attribute <strong>action</strong> tells the browser which URL to open, when the form is send.
+                    </p>
+                    <p>
+                        The attribute <strong>method</strong> defines the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods" target="_blank">HTTP Method</a>. Most used and supported by all browsers are GET and POST.
+                    </p>
+                    <p>
+                        If you set the <strong>method</strong> to <strong>GET</strong>, the form data will be send as paramaters
+                        of the URL that the form redirects to. The parameter values are <a href="https://www.urlencoder.org/" target="_blank">URL-encoded</a>.<br>
+                        This method can be useful for searchforms, so that users can bookmark the search URL.<br>
+                        <br>
+                        Example:<br>
+                        http://your-music-website.com/?artist=madonna&title=like%20a%20prayer
+                    </p>
+                    <p>
+                        If you set it to <strong>POST</strong> the form data will be send invisible inside the request and
+                        can be read by all back-end languages.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Text Fields</h2>
+
+                    <p>
+                        One of the most used elements to obtain text from users is the <strong>&lt;input&gt;</strong> element.<br>
+                        The <strong>type</strong> attribute defines what type of information is to be captured within the control.
+                    </p>
+                    <p>
+                        The <strong>name</strong> attribute defines the name of the parameter that is send as form data.
+                    </p>
+                    <p>
+                        <label for="name">Your name:</label>
+                        <input type="text" name="name" id="name">
+                    </p>
+                    <p>
+                        The original values for the <strong>type</strong> attribute have been <strong>text</strong> and
+                        <strong>password</strong>, but with HTML5 we got a lot more.
+                    </p>
+                    <p>
+                        You could use:<br>
+                        color, date, datetime, email, month, number, range, search, tel, time, url, week
+                    </p>
+                    <p>
+                        But ... not all browser support all types for now and the results might look very different.
+                    </p>
+                    <p>
+                        <label for="date">Choose a date:</label>
+                        <input type="date" name="date" id="date">
+                    </p>
+                    <p>
+                        <label for="number">Choose a number:</label>
+                        <input type="number" name="number" id="number">
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Textareas</h2>
+                </section>
+            </div><!-- /container -->
+        </form>
+    </body>
+</html>
