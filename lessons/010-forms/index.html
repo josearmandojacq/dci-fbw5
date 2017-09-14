@@ -276,6 +276,109 @@
                     </p>
                 </section>
 
+                <section>
+                    <h2>Hidden Input</h2>
+
+                    <p>
+                        Hidden inputs provide a way to pass data to the server without displaying it to users. Hidden<br>
+                        inputs are typically used for tracking codes, keys, or other information that is not pertinent<br>
+                        to the user but is helpful when processing the form. This information is not displayed on the<br>
+                        page; however, it can be found by viewing the source code of a page. It should therefore<br>
+                        not be used for sensitive or secure information.
+                    </p>
+
+                    <p>
+                        <strong>Example:</strong><br>
+                        <br>
+                        &lt;input type="hidden" name="tracking-code" value="abc-123"&gt;
+                    </p>
+
+                    <input type="hidden" name="tracking-code" value="abc-123">
+                </section>
+
+                <section>
+                    <h2>Organizing form elements</h2>
+
+                    <h3>Labels</h3>
+
+                    <p>
+                        Labels provide captions or headings for form controls, unambiguously tying them together and<br>
+                        creating an accessible form for all users and assistive technologies. Created using the
+                        <strong>&lt;label&gt;</strong><br>
+                        element, labels should include text that describes the inputs or controls they pertain to.
+                    </p>
+                    <p>
+                        Labels may include a for attribute. The value of the for attribute should be the same as the<br>
+                        value of the id attribute on the form control the label corresponds to. Matching up the for and<br>
+                        id attribute values ties the two elements together, allowing users to click on the
+                        <strong>&lt;label&gt;</strong> element<br>
+                        to bring focus to the proper form control.
+                    </p>
+                    <p>
+                        <strong>Example:</strong><br>
+                        <br>
+                        &lt;label for="username"&gt;Username&lt;/label&gt;<br>
+                        &lt;input type="text" name="username" id="username"&gt;
+                    </p>
+
+                    <h3>Fieldsets &amp; Legends</h3>
+
+                    <p>
+                        Fieldsets group form controls and labels into organized sections. Much like a
+                        <strong>&lt;section&gt;</strong> or other<br>
+                        structural element, the <strong>&lt;fieldset&gt;</strong>
+                        is a block-level element that wraps related elements, specifically<br>
+                        within a <strong>&lt;form&gt;</strong>
+                        element, for better organization. Fieldsets, by default, also include a border outline,<br>
+                        which can be modified using CSS.
+                    </p>
+                    <p>
+                        A legend provides a caption, or heading, for the <strong>&lt;fieldset</strong> element. The
+                        <strong>&lt;legend&gt;</strong> element wraps<br>
+                        text describing the form controls that fall within the fieldset. The markup should include the<br>
+                        <strong>&lt;legend&gt;</strong> element directly after the opening <strong>&lt;fieldset&gt;</strong>
+                        tag. On the page, the legend will<br>
+                        appear within the top left part of the fieldset border.
+                    </p>
+                    <br>
+                    <fieldset>
+                        <legend>My fieldset</legend>
+
+                        <label for="nothing">Your name:</label>
+                        <input type="text" name="nothing" id="nothing">
+                    </fieldset>
+                </section>
+
+                <section>
+                    <h2>Input attributes</h2>
+
+                    <h3>Disabled</h3>
+
+                    <p>
+                        The disabled Boolean attribute turns off an element or control so that it is not available for<br>
+                        interaction or input. Elements that are disabled will not send any value to the server for form<br>
+                        processing.
+                    </p>
+                    <p>
+                        <input type="text" name="nothing_else" disabled>
+                    </p>
+
+                    <h3>Placeholder</h3>
+
+                    <p>
+                        The placeholder HTML5 attribute provides a hint or tip within the form control of an
+                        <strong>&lt;input&gt;</strong><br>
+                        or <strong>&lt;textarea&gt;</strong> element that disappears once
+                        the control is clicked in or gains focus.<br>
+                        <br>
+                        This is used to give users further information on how the form input should be filled in,<br>
+                        for example, the email address format to use.
+                    </p>
+                    <p>
+                        <input type="text" name="nothing_else_matters" placeholder="your.name@example.com">
+                    </p>
+                </section>
+
             </div><!-- /container -->
         </form>
 

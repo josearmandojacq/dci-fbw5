@@ -105,8 +105,23 @@ input[type="submit"] {
     width: auto;
 }
 
+input[disabled] {
+    background: #efefef;
+    cursor: not-allowed;
+}
+
 select {
     width: 50%;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    padding: 20px;
+    width: 50%;
+}
+
+legend {
+    padding: 0 10px;
 }
 
 .smartform h3 {
