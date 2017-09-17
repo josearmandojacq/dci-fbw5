@@ -34,65 +34,68 @@ body {
 
 /* Background repeat */
 
-.example-repeating-horizontally {
+#example-repeating-horizontally {
   background-repeat: repeat-x;
 }
 
-.example-repeating-vertically {
+#example-repeating-vertically {
   background-repeat: repeat-y;
 }
 
-.example-not-repeating {
+#example-not-repeating {
   background-repeat: no-repeat;
 }
 
 /* Background position */
 
-.example-position-left {
+#example-position-left {
   background-repeat: no-repeat;
   background-position-x: 50px;
 }
 
-.example-position-top {
+#example-position-top {
   background-repeat: no-repeat;
   background-position-y: 50px;
 }
 
-.example-position {
+#example-position {
   background-repeat: no-repeat;
   background-position: 50px 50px;
 }
 
-.example-position-centered {
+#example-position-centered {
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.example-position-right {
+#example-position-right {
   background-repeat: no-repeat;
   background-position: right;
 }
 
-.example-position-bottom {
+#example-position-bottom {
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
 /* Background sizing */
 
-.example-sizing-covering {
+#example-sizing-covering {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.example-sizing-containing {
+
+#example-sizing-containing {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.example-sizing-proportional {
+
+#example-sizing-proportional {
   background-repeat: no-repeat;
   background-size: 300px;
 }
-.example-sizing-squeezed {
+
+#example-sizing-squeezed {
   background-repeat: no-repeat;
   background-size: 300px 100px;
 }
