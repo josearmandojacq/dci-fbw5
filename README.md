@@ -12,6 +12,22 @@ We'll collect a lot of useful links during our 9 month course.
 
 [Go to the useful links](https://github.com/noreading/dci-fbw5/blob/master/links.md)
 
+## Get a live-webserver in 5 minutes
+
+### Linux:
+
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+
+### Mac:
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+
+### Both:
+
+nvm install 8
+
+npm i -g zeropaper/live-server
+
 ## Timetable
 
 |Time|Minutes|Topics|
