@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="clearfix">
+            <h1 class="page-name">Forms</h1>
+        </header>
+
+        <div class="clearfix">
+            <form action="index.html" method="get" class="smartform">
+                <div class="col-50 container">
+                    <fieldset>
+                        <legend><h2>Personal Data</h2></legend>
+
+                        <p>
+                            <label for="first_name">First name:</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </p>
+
+                        <p>
+                            <label for="last_name">Last name:</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </p>
+
+                        <p>
+                            <label for="street">Street:</label>
+                            <input type="text" name="street" id="street">
+                        </p>
+
+                        <p>
+                            <label for="zipcode">Zipcode:</label>
+                            <input type="text" name="zipcode" id="zipcode">
+                        </p>
+
+                        <p>
+                            <label for="city">City:</label>
+                            <input type="text" name="city" id="city">
+                        </p>
+
+                        <p>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" name="phone" id="phone">
+                        </p>
+
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                        </p>
+
+                        <p>
+                            <label for="comments">Comments:</label>
+                            <textarea name="comments"
+                                      id="comments"
+                                      placeholder="Tell us more about important colors, etc."></textarea>
+                        </p>
+                    </fieldset>
+                </div><!-- /col-50 -->
+                <div class="col-50 container">
+                    <fieldset>
+                        <legend><h2>Products</h2></legend>
+
+                        <h3>Web Design</h3>
+
+                        <div class="radio">
+                            <input type="radio" name="web_design" value="individual" id="design_individual">
+                            <label for="design_individual">Individual</label>
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" name="web_design" value="template" id="design_template">
+                            <label for="design_template">Template</label>
+                        </div>
+
+                        <br><br>
+
+                        <h3>Web Development</h3>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="development[]" value="HTML &amp; CSS" id="development_html_css">
+                            <label for="development_html_css">HTML &amp; CSS</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="development[]" value="JavaScript" id="development_js">
+                            <label for="development_js">JavaScript</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="development[]" value="MongoDB" id="development_mongo">
+                            <label for="development_mongo">MongoDB</label>
+                        </div>
+
+                        <p>
+                            <label for="date_begin">Project start:</label>
+                            <input type="date" name="date_begin" id="date_begin">
+                        </p>
+
+                        <p>
+                            <label for="date_end">Project end:</label>
+                            <input type="date" name="date_end" id="date_end">
+                        </p>
+
+                        <p>
+                            <label for="category">Category:</label>
+                            <select name="category" id="category">
+                                <option value="personal">Personal</option>
+                                <option value="business">Business</option>
+                            </select>
+                        </p>
+                    </fieldset>
+
+                    <br>
+
+                    <p>
+                        <button class="btn btn-submit" type="submit">
+                            Order our services
+                        </button>
+                    </p>
+                </div>
+            </form>
+        </div><!-- /container -->
+    </body>
+</html>

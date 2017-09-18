@@ -1,0 +1,143 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+header {
+    background-color: #343a40;
+    padding: 9px;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+
+/* Layout */
+
+.page-name {
+    color: #ffffff;
+    float: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 20px 0 0;
+    padding: 8px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+}
+
+/* Contents */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    padding: 20px;
+}
+    legend {
+        color: #006ce5;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+input,
+textarea {
+    border: 1px solid #c0c0c0;
+    padding: 5px 5px;
+    width: 100%;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: auto;
+}
+
+select {
+    width: 100%;
+}
+
+.smartform h3 {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+}
+
+.radio {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+}
+
+    .radio label,
+    .checkbox label {
+        display: inline-block;
+        font-weight: normal;
+    }
+
+.btn {
+    border: 1px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    padding: 11px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-submit {
+    background-color: #00aa00;
+    border-color: #00aa00;
+    color: #ffffff;
+}
