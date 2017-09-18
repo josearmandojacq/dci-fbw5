@@ -14,19 +14,28 @@ We'll collect a lot of useful links during our 9 month course.
 
 ## Get a live-webserver in 5 minutes
 
-### Linux:
+### Installation
 
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+#### Linux:
 
-### Mac:
+```wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash```
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+#### Mac:
 
-### Both:
+```curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash```
 
+#### Both:
+
+```
 nvm install 8
-
 npm i -g zeropaper/live-server
+```
+
+### Usage
+
+Go to a folder, where there's an "index.html" file inside.
+
+```live-server```
 
 ## Timetable
 
