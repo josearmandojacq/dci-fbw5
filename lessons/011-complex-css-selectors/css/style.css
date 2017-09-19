@@ -102,3 +102,51 @@ article span {
 article > p {
     color: #006ce5;
 }
+
+.list-example,
+.list-example ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .list-example > li {
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    .list-example > li > a {
+        color: #000;
+        background: #c0c0c0;
+        padding: 5px 10px;
+        line-height: 30px;
+        text-decoration: none;
+    }
+
+    .list-example > li > a:hover {
+        background: #a0a0a0;
+    }
+
+    .list-example > li > ul {
+        display: none;
+        position: absolute;
+        top: 30px;
+    }
+
+    /* Show element on hover */
+    .list-example > li:hover > ul {
+        display: block;
+    }
+
+    .list-example > li > ul > li > a {
+        color: #000;
+        background: #efefef;
+        line-height: 30px;
+        padding: 5px 10px;
+    }
+
+
+.col-33 {
+    float: left;
+    width: 33%;
+}
