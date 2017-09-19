@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complex CSS Selectors</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="vendor/prismjs/prism.css">
+    </head>
+    <body>
+        <header class="clearfix">
+            <h1 class="page-name">Forms</h1>
+        </header>
+
+        <div class="container clearfix">
+            <section>
+                <h2>Child Selectors</h2>
+
+                <h3>Descendant Selector</h3>
+
+                <h4>The selection</h4>
+
+                <p>
+                    We select all &lt;span&gt; elements inside &lt;article&gt; elements and change the font color to
+                    blue.
+                </p>
+
+                <pre><code class="language-css">article span {...}</code></pre>
+
+                <h4>Live example</h4>
+
+                <div class="example">
+                    <p>
+                        <span>This is not selected</span>
+                    </p>
+
+                    <article>
+                        <span>This is selected, as it is inside an &lt;article&gt; element.</span>
+                    </article>
+                </div>
+
+                <h3>Direct Child Selector</h3>
+
+                <h4>The Selection</h4>
+
+                <p>
+                    We select only &lt;p&gt; elements that fall directly inside an &lt;article&gt; element.
+                </p>
+
+                <pre><code class="language-css">article > p {...}</code></pre>
+
+                <h4>Live example</h4>
+
+                <div class="example">
+                    <article>
+                        <p>
+                            This is selected, because it's direclty falling inside the &lt;article&gt; element.
+                        </p>
+
+                        <div>
+                            <p>
+                                This is not selected, because it's inside another &lt;div&gt; element.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h2>Sibling Selectors</h2>
+
+                <h3></h3>
+            </section>
+        </div>
+
+        <script src="vendor/prismjs/prism.js"></script>
+    </body>
+</html>

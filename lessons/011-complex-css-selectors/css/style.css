@@ -1,0 +1,104 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, HelveticaArial, sans-serif;
+}
+
+header {
+    background-color: #343a40;
+    padding: 9px;
+}
+
+p {
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+h2 {
+    border-bottom: 1px solid #c0c0c0;
+    color: #006ce5;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #00aa00;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+h4 {
+    color: cadetblue;
+    width: 70%;
+}
+
+a {
+    color: #006ce5;
+    text-decoration :none;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+
+p,
+pre,
+code {
+    width: 70%
+}
+
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+
+/* Layout */
+
+.page-name {
+    color: #ffffff;
+    float: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 20px 0 0;
+    padding: 8px;
+}
+
+.container {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Content */
+
+.example {
+    background: #f5f2f0;
+    padding: 15px;
+    width: 70%;
+}
+
+article span {
+    color: #006ce5;
+}
+
+article > p {
+    color: #006ce5;
+}
