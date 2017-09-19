@@ -34,3 +34,7 @@ Typing games can be used to train your typing skills, as a good typing speed is 
 [Funny typing games](http://games.sense-lang.org/EN.php)
 
 [Typing Test](http://thetypingcat.com/typing-speed-test/1m)
+
+# Collaborative JSFiddle
+
+[JSFiddle](https://jsfiddle.net/noreading/k3a96bhf/1/#&togetherjs=e42Lbh2vVG)
