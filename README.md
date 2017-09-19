@@ -49,3 +49,7 @@ Go to a folder, where there's an "index.html" file inside.
 |13:00 - 14:30|90|Live coding, studies, exercises, projects|
 |14:30 - 14:45|15|**Short break**|
 |14:45 - 16:15|90|Live coding, studies, exercises, projects|
+
+## Slack Channel
+
+https://join.slack.com/t/fbw5/shared_invite/enQtMjQzMjQxNDgzMjY2LWY1YjQwNzllZjc0NWI3YTQzNDVmMWM3OGZlNmZhZDg0MmY5ZTg0ZjgyZWRjZGI3YmIyZjBhZWJmMzI0NGQ3ZGU
