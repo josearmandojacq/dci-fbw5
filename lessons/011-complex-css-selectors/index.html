@@ -92,6 +92,59 @@
 
                 <br>
             </section>
+
+            <section>
+                <h2>Attribute Selectors</h2>
+
+                <h3>Atrribute Present Selector</h3>
+
+                <h4>The selection</h4>
+
+                <p>
+                    We select all &lt;input&gt; elements with the "disabled" attribute being present.
+                </p>
+
+                <pre><code class="language-css">input[disabled]{...}</code></pre>
+
+                <h4>Live example</h4>
+
+                <div class="example">
+                    <p>
+                        <span>This is not selected</span><br>
+                        <input type="text" value="Example: enabled">
+                    </p>
+                    <p>
+                        <span>This is selected</span><br>
+                        <input type="text" value="Example: disabled" disabled>
+                    </p>
+                </div>
+
+
+                <h3>Atrribute Equals Selector</h3>
+
+                <h4>The selection</h4>
+
+                <p>
+                    We select all &lt;input&gt; elements with the "type" attribute being set to "text".
+                </p>
+
+                <pre><code class="language-css">input[type="text"]{...}</code></pre>
+
+                <h4>Live example</h4>
+
+                <div id="example-attribute-equals" class="example">
+                    <p>
+                        <span>This is not selected</span><br>
+                        <input type="email" value="Example: Type is date">
+                    </p>
+                    <p>
+                        <span>This is selected</span><br>
+                        <input type="text" value="Example: Type is text">
+                    </p>
+                </div>
+
+                <br>
+            </section>
         </div>
 
         <script src="vendor/prismjs/prism.js"></script>

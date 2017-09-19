@@ -145,8 +145,15 @@ article > p {
         padding: 5px 10px;
     }
 
+input[disabled] {
+    border: 1px solid #000;
+    background: #999999;
+    cursor: not-allowed;
+    color: #fff;
+    padding: 5px 10px;
+}
 
-.col-33 {
-    float: left;
-    width: 33%;
+#example-attribute-equals input[type="text"] {
+    border: 1px solid red;
+    background: #efefef;
 }
