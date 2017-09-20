@@ -12,6 +12,12 @@ Shay Howe created a great resource for learning HTML & CSS and you'll find most 
 
 [learn.shayhowe.com](http://learn.shayhowe.com/)
 
+## Learn CSS Layout
+[learnlayout.com](http://learnlayout.com/)
+> This site teaches the CSS fundamentals that are used in any website's layout.
+
+Great resource for review what was covered in previous lessons, short and very well explained. It is also translated to several languages.
+
 ## HTML Reference
 
 There's a very good reference for all HTML tags and attributes offered by the Mozilla Foundation.
