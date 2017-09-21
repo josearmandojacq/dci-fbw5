@@ -27,7 +27,13 @@ There might be some errors that are not critical, as some of the new JavaScript 
 
 [W3 HTML validator](https://validator.w3.org/#validate_by_input)
 
-# Typing Games
+## Demo images for mockups
+
+<img align="right" src="http://lorempixel.com/250/150/cats/"> If you'd like to have some nice images in the mockups you create, there's a good resource to get exactly what you need.
+
+The [Lorempixel website](http://lorempixel.com/) offers a free service that generates images based on your given size and category and there's more than cats. You can also add some text to the image, if you like.
+
+## Typing Games
 
 Typing games can be used to train your typing skills, as a good typing speed is important to do a good job as a developer.
 
