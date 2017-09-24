@@ -4,15 +4,7 @@ This is an exercise to build different page layouts with HTML and CSS. You'll ne
 
 # Tasks
 
-## Create a gallery page
-
-![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/010-building-website-templates/images/album.png)
-
-## Optional: Create a business page
-
-![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/010-building-website-templates/images/business.png)
-
-# Fonts
+## Use this fonts
 
 The example pages are created with the following font-family settings:
 
@@ -33,3 +25,14 @@ body {
     "Helvetica Neue", Arial, sans-serif;
 }
 ```
+
+## Create a gallery page
+
+![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/010-building-website-templates/images/album.png)
+
+## Optional: Create a business page
+
+This task is optional, if you're fast in finishing the first example and want to give it a try.
+Please ask your teacher if there are questions about how to accomplish things that you're not familiar with.
+
+![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/010-building-website-templates/images/business.png)
