@@ -18,6 +18,10 @@ hr.last {
     margin: 100px 0 25px 0;
 }
 
+.textalign-right {
+    text-align: right;
+}
+
 /* Layout */
 
 #header .container,
