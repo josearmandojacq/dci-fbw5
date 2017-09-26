@@ -23,7 +23,6 @@ h2 {
     margin: 0 0 15px 0;
 }
 
-
 /* Clearfix */
 
 .clearfix:before,
@@ -81,9 +80,9 @@ h2 {
 }
 
 @keyframes circle {
-  50% {
-    left: 90%;
-}
+    50% {
+        left: 90%;
+    }
 }
 
 #square {
@@ -106,8 +105,10 @@ h2 {
     animation: colorfade 8s linear infinite;
     background: #cc0000;
     border-radius: 50%;
+    left: 0;
     height: 100px;
     margin-top: 50px;
+    position: relative;
     width: 100px;
 }
 
@@ -126,5 +127,6 @@ h2 {
     }
     100% {
         background: #aa0000;
+        left: 95%;
     }
 }
