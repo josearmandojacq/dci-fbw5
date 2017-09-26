@@ -10,4 +10,4 @@ This is an exercise for CSS transforms and animations.
 
 # Code Base
 
-Use [this code](http://jsbin.com/foridedagu/edit?html,css,output) to start.
+Use [this code](http://jsbin.com/foridedagu) to start.
