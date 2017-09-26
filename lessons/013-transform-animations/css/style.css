@@ -258,10 +258,11 @@ section {
 
         Name of the animation (has to be the same as for the @keyframes definition)
         Time in seconds (floating point values)
+        Animation timing function (ease, linear, ease-in, ease-out, etc.)
         Number of iterations (1, 2, ... infinite)
      */
-    animation: moveItSomewhere 2s infinite;
-}
+    animation: moveItSomewhere 2s linear infinite;
+} etc.
 
 @keyframes moveItSomewhere {
     50% {
@@ -273,7 +274,7 @@ section {
 }
 
 #animate-color {
-    animation: colorFade 2s infinite;
+    animation: colorFade 2s linear infinite;
 }
 
 @keyframes colorFade {
