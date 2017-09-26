@@ -64,37 +64,36 @@ h2 {
 /* Contents */
 
 #box {
-  width: 100%;
-  height: 90px;
-  background: #dfdfdf;
-  border-radius: 10px;
+    background: #dfdfdf;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;    
 }
 
 #circle {
-  position: relative;
-  left: 0;
-  top: 10px;
-  width: 20px;
-  height: 20px;
-  background: #cc0000;
-  border-radius: 50%;
-  animation: circle 4s linear infinite;
+    animation: circle 4s linear infinite;
+    background: #cc0000;
+    border-radius: 50%;
+    left: 0;
+    height: 20px;
+    position: relative;
+    width: 20px;
 }
 
 @keyframes circle {
   50% {
-        left: 90%;
-  }
+    left: 90%;
+}
 }
 
 #square {
-  position: relative;
-  top: 30px;
-  left: 10px;
-  width: 20px;
-  height: 20px;
-  background: #00cc00;
     animation: square 1s linear infinite;
+    background: #00cc00;
+    left: 10px;
+    height: 20px;
+    position: relative;
+    top: 30px;
+    width: 20px;
 }
 
 @keyframes square {
@@ -104,12 +103,12 @@ h2 {
 }
 
 #colorfade {
-  width: 100px;
-  height: 100px;
-  margin-top: 20px;
-  background: #cc0000;
-  border-radius: 50%;
     animation: colorfade 8s linear infinite;
+    background: #cc0000;
+    border-radius: 50%;
+    height: 100px;
+    margin-top: 50px;
+    width: 100px;
 }
 
 @keyframes colorfade {
