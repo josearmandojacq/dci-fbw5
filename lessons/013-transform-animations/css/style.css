@@ -259,10 +259,10 @@ section {
         Name of the animation (has to be the same as for the @keyframes definition)
         Time in seconds (floating point values)
         Animation timing function (ease, linear, ease-in, ease-out, etc.)
-        Number of iterations (1, 2, ... infinite)
+        Number of iterations (1, 2, ... infinite, etc.)
      */
     animation: moveItSomewhere 2s linear infinite;
-} etc.
+}
 
 @keyframes moveItSomewhere {
     50% {
