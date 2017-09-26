@@ -1,0 +1,131 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+header {
+    background-color: #343a40;
+    padding: 9px;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+
+/* Layout */
+
+.page-name {
+    color: #ffffff;
+    float: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 20px 0 0;
+    padding: 8px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+}
+
+/* Contents */
+
+#box {
+  width: 100%;
+  height: 90px;
+  background: #dfdfdf;
+  border-radius: 10px;
+}
+
+#circle {
+  position: relative;
+  left: 0;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background: #cc0000;
+  border-radius: 50%;
+  animation: circle 4s linear infinite;
+}
+
+@keyframes circle {
+  50% {
+        left: 90%;
+  }
+}
+
+#square {
+  position: relative;
+  top: 30px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background: #00cc00;
+    animation: square 1s linear infinite;
+}
+
+@keyframes square {
+    100% {
+        transform: rotate(360deg)   
+    }
+}
+
+#colorfade {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  background: #cc0000;
+  border-radius: 50%;
+    animation: colorfade 8s linear infinite;
+}
+
+@keyframes colorfade {
+    0% {
+        background: #aa0000;
+    }
+    25% {
+        background: #00aa00;
+    }
+    50% {
+        background: #0000aa;
+    }
+    75% {
+        background: #aaaa00;
+    }
+    100% {
+        background: #aa0000;
+    }
+}
