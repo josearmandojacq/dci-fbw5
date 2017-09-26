@@ -1,0 +1,289 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, HelveticaArial, sans-serif;
+}
+
+header {
+    background-color: #343a40;
+    padding: 9px;
+}
+
+p {
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+h2 {
+    border-bottom: 1px solid #c0c0c0;
+    color: #006ce5;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #00aa00;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+h4 {
+    color: cadetblue;
+    width: 70%;
+}
+
+a {
+    color: #006ce5;
+    text-decoration :none;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+
+p,
+pre,
+code {
+    width: 70%
+}
+
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+
+/* Layout */
+
+.page-name {
+    color: #ffffff;
+    float: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 20px 0 0;
+    padding: 8px;
+}
+
+.container {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.col {
+    float: left;
+}
+
+.col-10 {
+    width: 10%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+/* Content */
+
+.light-gray-box,
+.gray-box {
+    background: #efefef;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.gray-box {
+    background: #b0b0b0;
+}
+
+/*
+  Rotation:
+  Rotate an element by a given amount of degrees.
+
+  Positive value:  clockwise
+  Negative value:  counter clockwise
+*/
+
+#rotate div {
+    margin-right: 70px;
+}
+
+#rotate-20 {
+    transform: rotate(20deg);
+}
+
+#rotate-20-counter {
+    transform: rotate(-20deg);
+}
+
+#rotate div {
+    margin-right: 70px;
+}
+
+#rotate-20 {
+    transform: rotate(20deg);
+}
+
+#rotate-20-counter {
+    transform: rotate(-20deg);
+}
+
+/*
+  Scale:
+  Scales the size of an element, not changing it's original position in the
+  flow, so it's not changing the elements around it.
+
+    1 = 100 %
+  1.5 = 150 %
+*/
+
+#scale-2 {
+    width: 10px;
+    height: 10px;
+    transform: scale(4);
+}
+
+/*
+    Translate:
+    Pushing / pulling an element's position.
+*/
+
+#translate .light-gray-box {
+    margin-right: 25px;
+}
+
+.translate-left {
+    /*
+        You can use one or two values (comma seperated) to define the translation.
+        The first value defines the position on the x-axis, relative to the original position.
+        The second value defines the position on the y-axis, relative to the original position.
+
+        If you use a positive value, the x-axis will move the element to the right and the y-axis
+        will move the element down.
+
+        If you use a negative value, the x-axis will move the element to the left and the y-axis
+        will move the element up.
+    */        
+    transform: translate(-5px, 0);
+
+    /*
+        Alternatives:
+
+        scaleX()   Only changes the horizontal size
+        scaleY()   ONly changes the vertical size
+    */
+}
+
+.translate-right {
+    transform: translate(10px, 0);
+}
+
+.translate-bottom-right {
+    transform: translate(10px, 10px);
+}
+
+/*
+    Skew:
+*/
+
+#skew .light-gray-box {
+    margin-right: 35px;
+}
+
+#skew .light-gray-box,
+#skew .gray-box {
+    width: 80px;
+    height: 80px;
+}
+
+.skew-x {
+    transform: skew(20deg);
+}
+
+.skew-y {
+    transform: skew(-20deg);
+}
+
+.skew-both {
+    transform: skew(15deg, -25deg);
+}
+
+/*
+    Combining transforms:
+    You can combine transforms by using a space separated list.
+*/
+
+#combine .light-gray-box {
+    margin-right: 25px;
+}
+
+.combine-1 {
+    transform: scale(1.1) rotate(20deg);
+}
+
+.combine-2 {
+    transform: rotate(45deg) translate(30px, 0);
+}
+
+.combine-3 {
+    transform: skew(20deg) translate(20px);
+    margin-left: 20px;
+}
+
+/*
+    Animations:
+
+*/
+
+#animate-rotate-50 {
+    /*
+        Parameters:
+
+        Name of the animation (has to be the same as for the @keyframes definition)
+        Time in seconds (floating point values)
+        Number of iterations (1, 2, ... infinite)
+     */
+    animation: moveItSomewhere 2s infinite;
+}
+
+@keyframes moveItSomewhere {
+    50% {
+        transform: rotate(50deg);
+    }
+    100% {
+        transform: translate(105px, 0);
+    }
+}
+
+#animate-color {
+    animation: colorFade 2s infinite;
+}
+
+@keyframes colorFade {
+    0% {
+        background: red;
+    }
+    50% {
+        background: blue;
+    }
+    100% {
+        background: red;
+    }
+}
