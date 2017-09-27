@@ -28,11 +28,11 @@ body {
 
 ## Create a gallery page
 
-![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/010-building-website-templates/images/album.png)
+![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/005-css-box-model/exercise-003/images/album.png)
 
 ## Optional: Create a business page
 
 This task is optional, if you're fast in finishing the first example and want to give it a try.
 Please ask your teacher if there are questions about how to accomplish things that you're not familiar with.
 
-![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/010-building-website-templates/images/business.png)
+![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/005-css-box-model/exercise-003/images/business.png)
