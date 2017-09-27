@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/prismjs/prism.css">
+</head>
+<body>
+    <header class="clearfix">
+        <h1 class="page-name">Media Queries</h1>
+    </header>
+
+    <div id="page">
+        <section>
+            <h2>Targeting media types</h2>
+
+            <h3>Printing stylesheets</h3>
+            <p>
+<pre><code class="language-css">@media print {
+    p {
+        font-size: 12pt;
+    }
+}</code></pre>
+            </p>
+
+            <h3>Screen stylesheets</h3>
+            <p>
+<pre><code class="language-css">@media screen {
+    p {
+        font-size: 12pt;
+    }
+}
+</code></pre>
+
+            <h3>Targeting multiple devices</h3>
+            <p>
+<pre><code class="language-css">@media screen, print {
+    p {
+        font-size: 12px;
+    }
+}
+</code></pre>
+
+            </p>
+
+            <h2>Targeting media features</h2>
+
+            <h3>Screen size</h3>
+            <p>
+                We can react on different aspects of the browser's screen size, viewport, etc.
+            </p>
+<pre><code class="language-css">/* Show 2 columns instead of one on larger screens */
+@media (min-width: 992px) {
+    .container {
+      width: 50%;
+    }
+}
+</code></pre>
+
+            <p>
+                <strong>Example:</strong>
+            </p>
+
+            <div class="clearfix">
+                <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+                </div>
+
+                <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+                </div>
+            </div>
+
+            <h3>Combining media features</h3>
+
+<pre><code class="language-css">/* The background color is changed, if the resolution is between 760 and 860 pixels.*/
+@media (min-width: 760px) and (max-width: 860px) {
+    .container-2 {
+        background: #ffff00;
+    }
+}
+</code></pre>
+
+            <p>
+                <strong>Example:</strong>
+            </p>
+
+            <div class="clearfix">
+                <div class="container-2">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+
+                    <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+                </div>
+            </div>
+
+            <h3>Not targeting media features</h3>
+
+<pre><code class="language-css">/* The background is yellow for devices except printing */
+@media not print {
+    .container-3 {
+        background: #ffff00;
+    }
+}
+</code></pre>
+
+            <p>
+                <strong>Example:</strong>
+            </p>
+
+            <div class="clearfix">
+                <div class="container-3">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+
+                    <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+                </div>
+            </div>
+        </section>
+    </div><!-- /page -->
+
+    <script src="vendor/prismjs/prism.js"></script>
+</body>
+</html>
