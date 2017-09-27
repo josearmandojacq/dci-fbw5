@@ -54,3 +54,5 @@ Typing games can be used to train your typing skills, as a good typing speed is 
 # CSS Flexbox
 
 [A complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+[Checking your Flexbox knowledge](http://flexboxfroggy.com/)
