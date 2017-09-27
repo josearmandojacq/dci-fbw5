@@ -20,16 +20,15 @@
             <h2>Targeting media types</h2>
 
             <h3>Printing stylesheets</h3>
-            <p>
+
 <pre><code class="language-css">@media print {
     p {
         font-size: 12pt;
     }
 }</code></pre>
-            </p>
 
             <h3>Screen stylesheets</h3>
-            <p>
+
 <pre><code class="language-css">@media screen {
     p {
         font-size: 12pt;
@@ -38,7 +37,7 @@
 </code></pre>
 
             <h3>Targeting multiple devices</h3>
-            <p>
+
 <pre><code class="language-css">@media screen, print {
     p {
         font-size: 12px;
@@ -46,14 +45,13 @@
 }
 </code></pre>
 
-            </p>
-
             <h2>Targeting media features</h2>
 
             <h3>Screen size</h3>
             <p>
                 We can react on different aspects of the browser's screen size, viewport, etc.
             </p>
+
 <pre><code class="language-css">/* Show 2 columns instead of one on larger screens */
 @media (min-width: 992px) {
     .container {
