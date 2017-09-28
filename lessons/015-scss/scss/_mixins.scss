@@ -1,0 +1,7 @@
+@mixin crazyBorder($radius, $color) {
+  background: #00aaaa;
+  border: 2px solid $color;
+  border-radius: $radius;
+  color: #fff;
+  font-weight: bold;
+}

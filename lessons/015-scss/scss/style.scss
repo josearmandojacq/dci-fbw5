@@ -1,0 +1,185 @@
+/* Imports (imported files should have an underscore as first character of their name)
+-----------------------------------------------------------------------------------------*/
+
+@import "normalize";
+
+body {
+  margin: 1rem;
+}
+
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+
+/* Variables
+------------------------------*/
+
+$basicFontSize: 1rem;
+
+$fontColor: #555;
+$borderColor: #c0c0c0;
+
+$borderRadius: 6px;
+
+.alert {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: $borderRadius;
+  color: $fontColor;
+  font-size: $basicFontSize;
+  margin: 10px 0;  
+  padding: 5px 10px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.container {
+  border: 1px solid $borderColor;
+  border-radius: $borderRadius;
+  color: $fontColor;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Nesting
+------------------------------*/
+
+.nav {
+  margin: 0;
+  padding: 0;
+  
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  > li {    
+    display: inline-block;
+    position: relative;
+
+    a {
+      background: #efefef;
+      border: 1px solid #c0c0c0;
+      border-radius: 4px;
+      color: $fontColor;
+      display: block;
+      font-size: 1rem;
+      line-height: 1rem;
+      padding: 0.5rem;
+      text-decoration: none;
+      white-space: nowrap;
+
+      /* & = current element */
+      &:hover {
+        background: #fff;
+      }
+    }
+
+    ul {
+      display: none;
+      padding: 0;
+      position: absolute;
+      top: 2rem;
+    }
+
+    &:hover {
+      ul {
+        display: block;
+      }
+    }
+  }
+
+  .nav-item a:hover {
+    background: #e0e0e0;
+  }
+}
+
+/* Mixins
+------------------------------*/
+
+@import "mixins";
+
+.my-crazy-element {
+  @include crazyBorder(10px, #ffff00);
+  padding: 10px;
+}
+
+/* Extend */
+
+.base-alert {
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+.green-alert {
+  @extend .base-alert;
+  border-color: green;
+}
+
+.red-alert {
+  @extend .base-alert;
+  border-color: red;
+}
+
+/* Operators */
+
+.col-30 {
+  float: left;
+  // width: 33.3333%;
+  width: 100 / 3 * 1%;
+  box-sizing: border-box;
+  border: 1px solid #dd0000;
+  border-radius: $borderRadius + 10px;
+  padding: 5px 10px;
+}
+
+/* Changing colors */
+
+$darkenColor: #ffff00;
+$lightenColor: #aa0000;
+
+#color-darken {
+  background: $darkenColor;
+  border-radius: $borderRadius;
+  padding: 10px;
+
+  &:hover {
+    background: darken($darkenColor, 10%);
+  }
+}
+
+#color-lighten {
+  background: $lightenColor;
+  border-radius: $borderRadius;
+  padding: 10px;
+
+  &:hover {
+    background: lighten($lightenColor, 10%);
+  }
+}
+
+/* More functions:
+/  http://sass-lang.com/documentation/Sass/Script/Functions.html
+-------------------------------------------------------------------*/
