@@ -479,6 +479,14 @@ body {
   font-weight: bold;
   padding: 10px; }
 
+.my-crazy-element-2 {
+  background: #00aaaa;
+  border: 2px solid #ff00ff;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px; }
+
 /* Extend */
 .base-alert, .green-alert, .red-alert {
   padding: 10px;
@@ -517,3 +525,4 @@ body {
 /* More functions:
 /  http://sass-lang.com/documentation/Sass/Script/Functions.html
 -------------------------------------------------------------------*/
+/* Foobar */

@@ -27,12 +27,7 @@ body {
 /* Variables
 ------------------------------*/
 
-$basicFontSize: 1rem;
-
-$fontColor: #555;
-$borderColor: #c0c0c0;
-
-$borderRadius: 6px;
+@import "variables";
 
 .alert {
   background-color: transparent;
@@ -122,8 +117,11 @@ $borderRadius: 6px;
 @import "mixins";
 
 .my-crazy-element {
-  @include crazyBorder(10px, #ffff00);
-  padding: 10px;
+  @include crazyBox(10px, #ffff00);
+}
+
+.my-crazy-element-2 {
+  @include crazyBox(20px, #ff00ff);
 }
 
 /* Extend */
@@ -148,7 +146,7 @@ $borderRadius: 6px;
 .col-30 {
   float: left;
   // width: 33.3333%;
-  width: 100 / 3 * 1%;
+  width: percentage(1 / 3);
   box-sizing: border-box;
   border: 1px solid #dd0000;
   border-radius: $borderRadius + 10px;
@@ -183,3 +181,6 @@ $lightenColor: #aa0000;
 /* More functions:
 /  http://sass-lang.com/documentation/Sass/Script/Functions.html
 -------------------------------------------------------------------*/
+
+
+/* Foobar */
