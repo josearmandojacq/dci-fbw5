@@ -24,3 +24,10 @@ node-sass --watch scss --output css
 * Rewrite the CSS to SCSS using the features that make your life easier (like variables, nested rules, etc.).
 
 * Seperate the CSS code into multiple files (like "_variables.scss", "_buttons.scss", "_grid.scss", etc.).
+
+* Write a mixin for "border-radius" that generates the following code, with a variable radius value:
+```
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+```
