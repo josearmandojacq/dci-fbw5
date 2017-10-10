@@ -1,0 +1,126 @@
+//
+// Global Styles
+//------------------------------------------
+
+// Colors
+$lightGray: #868e96;
+
+// Links
+$defaultLinkColor: #006ce5;
+$defaultLinkTextDecoration: none;
+$defaultLinkHoverTextDecoration: underline;
+
+// Containers
+$containerMaxWidth: 1130px;
+$containerPadding: 20px;
+
+// Horizontal Lines
+$hrBorder: 1px solid #e0e0e0;
+$hrMarginTopBottom: 40px;
+
+// Header
+$headerBackgroundColor: #343a40;
+$pageNameColor: #ffffff;
+$pageNameTextSize: 14px;
+$pageNameFontWeight: bold;
+$pageNameMargin: 0 20px 0 0;
+$pageNamePadding: 13px 0;
+
+// Quicksearch
+$quickSearchButtonBackgroundColor: transparent;
+$quickSearchButtonBorder: 1px solid #28a745;
+$quickSearchButtonColor: #28a745;
+
+// Footer
+$footerPadding: 20px 0;
+
+// Buttons
+$buttonBackgroundColor: $lightGray;
+$buttonBorder: 1px solid $lightGray;
+$buttonBorderRadius: 4px;
+$buttonTextColor: #ffffff;
+$buttonTextSize: 16px;
+$buttonFontWeight: 400;
+$buttonPadding: 10px 10px;
+
+$buttonHoverBackgroundColor: darken($lightGray, 10%);
+$buttonHoverBorder: 1px solid darken($lightGray, 10%);
+
+//
+// Index Page
+//------------------------------------------
+
+// Containers
+$indexContainerWidth: 100%;
+$indexContainerMaxWidth: 100%;
+$indexContainerPadding: 5px 15px;
+$indexContainerMediumWidth: 80%;
+
+// Navigation
+$navLinkColor: #ffffff;
+$navFontWeight: normal;
+$navTextDecoration: none;
+
+$navHoverLinkColor: #aaaaaa;
+$navHoverFontWeight: bold;
+$navHoverTextDecoration: none;
+
+// Hero image
+$heroBackground: #777777 url('http://lorempixel.com/1820/900/nature/3') no-repeat top left;
+$heroHeight: 472px;
+
+// Hero text
+$heroTextWidth: 60%;
+$heroTextColor: #ffffff;
+$heroTextShadow: 2px 2px 2px rgba(0, 0, 0, 0.73);
+$heroTextSize: 20px;
+$heroTextHeadlineSize: 40px;
+
+// Service items
+$serviceItemHeadlineColor: #555555;
+$serviceItemHeadlineSize: 30px;
+$serviceItemTextColor: #000000;
+$serviceItemTextSize: 14px;
+$serviceImageRadius: 50%;
+
+// Featured items
+$featureHeadlineColor: #5a5a5a;
+$featureHeadlineTextSize: 25px;
+$featureHeadlineFontWeight: 400;
+
+//
+// Album Page
+//------------------------------------------
+
+// Jumbotron
+$jumbotronPaddingTop: 25px;
+$jumbotronPaddingBottom: 20px;
+
+$jumbotronHeadlineColor: #000000;
+$jumbotronHeadlineTextSize: 24px;
+$jumbotronHeadlineFontWeight: 300;
+$jumboTronHeadlineMarginTop: 0;
+$jumboTronHeadlineMarginBottom: 10px;
+
+$jumbotronTextColor: $lightGray;
+$jumbotronTextSize: 14px;
+
+// Album
+$albumBackgroundColor: #f7f7f7;
+$albumRowMargin: 25px;
+
+$albumCardBackgroundColor: #ffffff;
+$albumCardBorderRadius: 6px;
+$albumCardMarginBottom: 20px;
+$albumCardPadding: 10px;
+
+$albumCardTextColor: $lightGray;
+$albumCardTextSize: 14px;
+$albumCardTextMargin: 10px 0 0 0;
+
+//
+// Load a different theme
+//------------------------------------------
+
+//@import "themes/blue";
+//@import "themes/red";

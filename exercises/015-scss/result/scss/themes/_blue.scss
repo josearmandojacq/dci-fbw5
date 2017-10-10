@@ -1,0 +1,62 @@
+//
+// Global Styles
+//------------------------------------------
+
+// Colors
+$mediumBlue: #1F4F8A;
+
+// Links
+$defaultLinkColor: $mediumBlue;
+
+// Horizontal Lines
+$hrBorder: 1px solid #e0e0e0;
+$hrMarginTopBottom: 20px;
+
+// Header
+$headerBackgroundColor: $mediumBlue;
+
+// Quicksearch
+$quickSearchButtonBorder: 1px solid #ffffff;
+$quickSearchButtonColor: #ffffff;
+
+// Buttons
+$buttonBackgroundColor: $mediumBlue;
+$buttonBorder: 1px solid darken($mediumBlue, 10%);
+
+$buttonHoverBackgroundColor: lighten($mediumBlue, 10%);
+$buttonHoverBorder: 1px solid $mediumBlue;
+
+//
+// Index Page
+//------------------------------------------
+
+// Navigation
+$navHoverLinkColor: #ffffff;
+$navHoverFontWeight: normal;
+$navHoverTextDecoration: underline;
+
+// Hero image
+$heroBackground: #777777 url('http://lorempixel.com/1820/900/nature/5') no-repeat top left;
+
+// Service items
+$serviceItemHeadlineColor: $mediumBlue;
+$serviceItemTextColor: #555555;
+$serviceImageRadius: 25%;
+
+// Featured items
+$featureHeadlineColor: $mediumBlue;
+
+//
+// Album Page
+//------------------------------------------
+
+// Jumbotron
+$jumbotronHeadlineColor: $mediumBlue;
+
+// Album
+$albumBackgroundColor: #f7f7f7;
+$albumRowMargin: 25px;
+
+$albumCardBorderRadius: 0;
+$albumCardMarginBottom: 40px;
+$albumCardPadding: 20px;

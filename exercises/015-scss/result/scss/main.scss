@@ -1,0 +1,85 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "clearfix";
+@import "grid";
+@import "buttons";
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:
+        /* Safari for OS X and iOS (San Francisco) */
+            -apple-system,
+                /* Chrome >= 56 for OS X (San Francisco), Windows, Linux and Android */
+            system-ui,
+                /* Chrome < 56 for OS X (San Francisco) */
+            BlinkMacSystemFont,
+                /* Windows */
+            "Segoe UI",
+                /* Android */
+            "Roboto",
+                /* Basic web fallback */
+            "Helvetica Neue", Arial, sans-serif;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+a {
+    color: $defaultLinkColor;
+    text-decoration: $defaultLinkTextDecoration;
+
+    &:hover,
+    &:active {
+        text-decoration: $defaultLinkHoverTextDecoration;
+    }
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+/* Layout */
+
+.container {
+    max-width: $containerMaxWidth;
+    margin: 0 auto;
+    padding: $containerPadding;
+}
+
+#header {
+    background-color: $headerBackgroundColor;
+}
+
+.page-name {
+    color: $pageNameColor;
+    display: inline-block;
+    font-size: $pageNameTextSize;
+    font-weight: $pageNameFontWeight;
+    line-height: $pageNameFontWeight;
+    margin: $pageNameMargin;
+    padding: $pageNamePadding;
+
+    @media (min-width: 768px) {
+        font-size: $pageNameTextSize * 1.5;
+        font-weight: normal;
+        line-height: $pageNameTextSize * 1.5;
+    }
+}
+
+#footer {
+    color: $lightGray;
+    padding: $footerPadding;
+}

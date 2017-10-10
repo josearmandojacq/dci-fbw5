@@ -1,0 +1,91 @@
+@import "variables";
+@import "mixins";
+
+/* Layout */
+
+#header {
+    .container {
+       padding: 5px 10px;
+    }
+}
+
+/* Contents */
+
+.jumbotron {
+    text-align: center;
+    padding: $jumbotronPaddingTop 0 $jumbotronPaddingBottom 0;
+
+    @media (min-width: 768px) {
+        padding: ($jumbotronPaddingTop * 3.8) 0 ($jumbotronPaddingBottom * 4) 0;
+    }
+
+    h2 {
+        color: $jumbotronHeadlineColor;
+        font-size: $jumbotronHeadlineTextSize;
+        font-weight: $jumbotronHeadlineFontWeight;
+        margin: $jumboTronHeadlineMarginTop 0 $jumboTronHeadlineMarginBottom 0;
+
+        @media (min-width: 768px) {
+            font-size: $jumbotronHeadlineTextSize * 1.7;
+            margin: $jumboTronHeadlineMarginTop 0 ($jumboTronHeadlineMarginBottom / 2) 0;
+        }
+    }
+
+    p {
+        color: $jumbotronTextColor;
+        font-size: $jumbotronTextSize;
+        font-weight: 400;
+        line-height: 1.75;
+        max-width: 75%;
+        margin: 0 auto 15px auto;
+
+        @media (min-width: 768px) {
+            font-size: $jumbotronTextSize * 1.3;
+            max-width: 55%;
+        }
+    }
+
+    .btn {
+        margin-bottom: 10px;
+
+        @media (min-width: 768px) {
+          margin-bottom: 0;
+        }
+    }
+}
+
+.album {
+    background-color: $albumBackgroundColor;
+    padding: 20px 0 0 0;
+
+    @media (min-width: 768px) {
+        padding: 30px 0 0 0;
+    }
+
+    .row {
+        margin-bottom: $albumRowMargin;
+
+        .card {
+            background-color: $albumCardBackgroundColor;
+            @include border-radius($albumCardBorderRadius);
+            margin-bottom: $albumCardMarginBottom;
+            padding: $albumCardPadding;
+            width: 100%;
+
+            @media (min-width: 768px) {
+                float: left;
+                width: 50%;
+            }
+
+            @media (min-width: 996px) {
+                width: 33.3333%;
+            }
+
+            .card-text {
+                color: $albumCardTextColor;
+                font-size: $albumCardTextSize;
+                margin: $albumCardTextMargin;
+            }
+        }
+    }
+}

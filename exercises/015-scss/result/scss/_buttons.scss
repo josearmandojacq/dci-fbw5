@@ -1,0 +1,28 @@
+/* Buttons */
+
+.btn {
+  background-color: $buttonBackgroundColor;
+  border: $buttonBorder;
+  border-radius: $buttonBorderRadius;
+  color: $buttonTextColor;
+  display: inline-block;
+  font-size: $buttonTextSize;
+  line-height: $buttonTextSize;
+  font-weight: $buttonFontWeight;
+  padding: $buttonPadding;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: $buttonHoverBackgroundColor;
+    border: $buttonHoverBorder;
+    text-decoration: none;
+  }
+}
+
+.btn-secondary {
+  background-color: lighten($buttonBackgroundColor, 20%);
+  border-color: lighten($buttonBackgroundColor, 20%);
+}

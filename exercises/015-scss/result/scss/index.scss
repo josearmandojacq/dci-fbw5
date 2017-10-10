@@ -1,0 +1,263 @@
+@import "variables";
+@import "mixins";
+
+/* Global Styles */
+
+.container {
+    max-width: $indexContainerMaxWidth;
+    margin: 0;
+    padding: 0;
+    width: $indexContainerWidth;
+}
+
+hr {
+    border: none;
+    border-top: $hrBorder;
+    display: block;
+    margin: $hrMarginTopBottom;
+
+    &.last {
+      margin: 100px 0 25px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    hr {
+        margin: ($hrMarginTopBottom * 2.5) 0;
+    }
+}
+
+.textalign-right {
+    text-align: right;
+}
+
+/* Layout */
+
+#header .container,
+#footer .container {
+    padding: $indexContainerPadding;
+}
+
+#header {
+    margin-bottom: 1px;
+}
+
+#nav {
+    display: inline-block;
+
+    .nav-container {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-item {
+        display: inline-block;
+
+        a {
+            color: $navLinkColor;
+            display: block;
+            font-weight: $navFontWeight;
+            padding: 4px;
+            text-decoration: $navTextDecoration;
+
+            &:hover {
+              text-decoration: $navHoverTextDecoration;
+            }
+
+            @media (min-width: 768px) {
+                padding: 10px;
+            }
+        }
+    }
+
+    .nav-item-current {
+        a {
+            color: $navHoverLinkColor;
+            font-weight: $navHoverFontWeight;
+            text-decoration: $navHoverTextDecoration;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #nav .nav-item a {
+        padding: 10px;
+    }
+}
+
+#quicksearch {
+    float: right;
+    padding: 5px 0;
+
+    input[type="text"] {
+        border: 1px solid transparent;
+        @include border-radius(4px);
+        background: #ffffff;
+        font-size: 14px;
+        line-height: 14px;
+        margin-right: 3px;
+        padding: 4px 6px;
+        vertical-align: middle;
+        width: 100px;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+            line-height: 16px;
+            margin-right: 5px;
+            padding: 8px 12px;
+        }
+    }
+
+    button {
+        background-color: $quickSearchButtonBackgroundColor;
+        border: $quickSearchButtonBorder;
+        color: $quickSearchButtonColor;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 4px 5px;
+
+        @media (min-width: 768px) {
+           padding: 10px 12px;
+        }
+    }
+}
+
+.container-medium {
+    margin: 0 auto;
+    width: $indexContainerMediumWidth;
+}
+
+/* Contents */
+
+#hero {
+    background: $heroBackground;
+    background-size: cover;
+    position: relative;
+    height: $heroHeight;
+    width: 100%;
+}
+
+#hero-text {
+    bottom: 15%;
+    color: $heroTextColor;
+    left: 5%;
+    position: absolute;
+    text-shadow: $heroTextShadow;
+    max-width: $heroTextWidth;
+
+    h2 {
+        font-size: $heroTextHeadlineSize;
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+
+    p {
+        font-size: $heroTextSize;
+        line-height: 1.5;
+    }
+}
+
+#service-list {
+    margin: 40px 0 0 0;
+
+    @media (min-width: 768px) {
+        margin-left: -30px;
+        margin-top: 50px;
+    }
+
+    @media (min-width: 992px) {
+        margin-left: -50px;
+        margin-top: 70px;
+    }
+}
+
+.service-item {
+    margin: 0 0 40px 0;
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        display: block;
+        float: left;
+        margin: 0 0 30px 0;
+        padding-left: 50px;
+        width: 50%;
+    }
+
+    @media (min-width: 992px) {
+        padding-left: 30px;
+        width: 33.333333%;
+    }
+
+    h3 {
+        color: $serviceItemHeadlineColor;
+        font-size: $serviceItemHeadlineSize;
+        font-weight: 400;
+        margin: 15px 0;
+    }
+
+    p {
+        color: $serviceItemTextColor;
+        font-size: $serviceItemTextSize;
+    }
+}
+
+.service-image {
+    display: inline-block;
+    @include border-radius($serviceImageRadius);
+}
+
+.feature .col {
+    float: none;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        float: left;
+    }
+}
+
+.feature-reverse .col {
+    @media (min-width: 768px) {
+       float: right;
+    }
+}
+
+    .feature-image-right {
+        text-align: left;
+
+        @media (min-width: 768px) {
+          text-align: right;
+        }
+    }
+
+    .feature {
+        img {
+           max-width: 100%;
+        }
+
+        h3 {
+            color: $featureHeadlineColor;
+            font-size: $featureHeadlineTextSize;
+            font-weight: $featureHeadlineFontWeight;
+            margin: 10px 0 15px 0;
+
+            @media (min-width: 768px) {
+                font-size: $featureHeadlineTextSize + 5px;
+                margin: 0 0 20px 0;
+            }
+
+            @media (min-width: 992px) {
+                font-size: $featureHeadlineTextSize * 2;
+                margin: 80px 0 20px 0;
+            }
+        }
+
+        .light {
+           color: lighten($featureHeadlineColor, 30%);
+        }
+    }
