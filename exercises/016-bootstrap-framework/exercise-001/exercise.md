@@ -30,3 +30,5 @@ node-sass --watch scss --output css
 1. Create the following **blockquote**:<br>![blockquote](https://github.com/noreading/dci-fbw5/raw/master/exercises/016-bootstrap-framework/exercise-001/images/004-blockquote.png)
 
 1. Create the following **grid with images**:<br>![blockquote](https://github.com/noreading/dci-fbw5/raw/master/exercises/016-bootstrap-framework/exercise-001/images/005-images.png)
+
+1. Create the following **progress bars**:<br>![progress bars](https://github.com/noreading/dci-fbw5/raw/master/exercises/016-bootstrap-framework/exercise-001/images/006-progress.png)
