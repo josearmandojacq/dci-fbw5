@@ -26,6 +26,8 @@ This is an exercise for the [Bootstrap Framework 3](https://getbootstrap.com/doc
 
 1. Create the following **JS tab panel** with fade effect:<br>![form](https://github.com/noreading/dci-fbw5/raw/master/exercises/016-bootstrap-framework/exercise-001/images/009-tab-panel.png)
 
+1. Create the following **dismissable alerts**:<br>![form](https://github.com/noreading/dci-fbw5/raw/master/exercises/016-bootstrap-framework/exercise-001/images/010-dismissable-alerts.png)
+
 # Needed tools
 
 ## SCSS compiler (node-sass)
