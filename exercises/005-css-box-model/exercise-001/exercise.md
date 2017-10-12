@@ -8,8 +8,8 @@ Create the following pages.
 
 ## Home
 
-![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/005-css-box-model/images/index.png)
+![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/005-css-box-model/exercise-001/images/index.png)
 
 ## About
 
-![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/005-css-box-model/images/about.png)
+![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/005-css-box-model/exercise-001/images/about.png)
