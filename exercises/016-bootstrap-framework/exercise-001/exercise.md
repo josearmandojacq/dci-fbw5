@@ -19,7 +19,7 @@ node-sass --watch scss --output css
 
 1. Copy the folder **exercises/016-bootstrap-framework/exercise-001/template/** to your local exercise directory, that you use for development. This folder contains the needed code that is used to give you all needed tools as a template, including the SCSS version of Bootstrap.
 
-1. Open a terminal, go to your newly created directory and run ```npm install``` once.
+1. Open a terminal, go to your newly created directory and run ```npm install``` once. Remember that you need to use 2 terminal windows / tabs to run the node-sass and live-server commands.
 
 1. Create the following **navbar** and don't forget to change IDs to your own naming, as you should never copy code from the Bootstrap documentation without reading and modifying.:<br>![navbar](https://github.com/noreading/dci-fbw5/raw/master/exercises/016-bootstrap-framework/exercise-001/images/001-navbar.png)
 
