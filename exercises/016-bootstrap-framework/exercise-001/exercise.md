@@ -22,6 +22,10 @@ This is an exercise for the [Bootstrap Framework 3](https://getbootstrap.com/doc
 
 1. Create the following **form**:<br>![form](https://github.com/noreading/dci-fbw5/raw/master/exercises/016-bootstrap-framework/exercise-001/images/007-form.png)
 
+1. Create the following **dropup split button**:<br>![form](https://github.com/noreading/dci-fbw5/raw/master/exercises/016-bootstrap-framework/exercise-001/images/008-dropup-split.png)
+
+1. Create the following **JS tab panel** with fade effect:<br>![form](https://github.com/noreading/dci-fbw5/raw/master/exercises/016-bootstrap-framework/exercise-001/images/009-tab-panel.png)
+
 # Needed tools
 
 ## SCSS compiler (node-sass)
