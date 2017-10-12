@@ -2,19 +2,6 @@
 
 This is an exercise for the [Bootstrap Framework 3](https://getbootstrap.com/docs/3.3/). You'll need to figure out how to use different features and components of the framework.
 
-How to run the SCSS compiler on your terminal:
-
-```bash
-# Change to the directory of your exercise
-cd ~/Development/exercises/016-bootstrap-framework/
-
-# Run it once
-node-sass scss --output css
-
-# Watch for file changes
-node-sass --watch scss --output css
-```
-
 # Tasks
 
 1. Copy the folder **exercises/016-bootstrap-framework/exercise-001/template/** to your local exercise directory, that you use for development. This folder contains the needed code that is used to give you all needed tools as a template, including the SCSS version of Bootstrap.
@@ -34,3 +21,30 @@ node-sass --watch scss --output css
 1. Create the following **progress bars**:<br>![progress bars](https://github.com/noreading/dci-fbw5/raw/master/exercises/016-bootstrap-framework/exercise-001/images/006-progress.png)
 
 1. Create the following **form**:<br>![form](https://github.com/noreading/dci-fbw5/raw/master/exercises/016-bootstrap-framework/exercise-001/images/007-form.png)
+
+# Needed tools
+
+## SCSS compiler (node-sass)
+
+How to run the SCSS compiler on your terminal:
+
+```bash
+# Change to the directory of your exercise
+cd ~/Development/exercises/016-bootstrap-framework/
+
+# Run it once
+node-sass scss --output css
+
+# Watch for file changes
+node-sass --watch scss --output css
+```
+
+## Live server
+
+```bash
+# Change to the directory of your exercise
+cd ~/Development/exercises/016-bootstrap-framework/
+
+# Run the server, that reload automatically on change
+live-server
+```
