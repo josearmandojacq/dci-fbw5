@@ -1,0 +1,29 @@
+/*
+ * You find the variables set by Bootstrap in the file:
+ * node_modules/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+
+// Navbar
+$navbar-border-radius:             0;
+$navbar-default-color:             #777;
+$navbar-default-bg:                #343a40;
+
+// Navbar links
+$navbar-default-link-color:                #fff;
+$navbar-default-link-hover-color:          #999;
+$navbar-default-link-active-color:         #aaa;
+
+// Navbar brand label
+$navbar-default-brand-color:               $navbar-default-link-color;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           darken(#ddd, 40%);
+$navbar-default-toggle-icon-bar-bg:        #ddd;
+$navbar-default-toggle-border-color:       #ddd;
+
+// Jumbotron
+$jumbotron-padding:              20px;
+$jumbotron-font-size:            ceil(($font-size-base * 1.5));
+$jumbotron-heading-font-size:    ceil(($font-size-base * 3.5));
