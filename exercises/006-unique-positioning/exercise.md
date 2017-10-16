@@ -6,4 +6,4 @@ This is an exercise for unique positioning. You'll need to remember how to use r
 
 Create the following page.
 
-![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/007-unique-positioning/images/index.png)
+![Index page](https://github.com/noreading/dci-fbw5/raw/master/exercises/006-unique-positioning/images/index.png)
